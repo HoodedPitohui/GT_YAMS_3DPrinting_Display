@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="../css/body.css">
     <meta http-equiv="refresh" content="10">
     <title>Home</title>
+    <script src="../js/gDriveUtility.js"></script>
   </head>
   <body>
     <h2>3D Print Queue</h2>
@@ -11,27 +12,14 @@
     <iframe class = "proPrints" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
     <h3>Current Files Printing</h3>
     <script>
-
-      //https://dev.to/temmietope/embedding-a-google-drive-image-in-html-3mm9
-      //per this source, we can make an image file auto-visable from google drive
-      //if we switch up the position of its image id. This code does that
-      var linkX = "https://drive.google.com/file/d/1GUrFutRv_PZBDcxM8koAo4G2EI92IA-X/view?usp=sharing"
-      var imageID = linkX.substring(
-        linkX.indexOf("/d/") + 3,
-        linkX.lastIndexOf("/view")
-      );
-
-      var preLink = "https://drive.google.com/thumbnail?id="
-      var outLink = preLink + imageID
-      function show_image(src, alt) {
-        var img = document.createElement("img");
-        img.src = src;
-        img.alt = alt;
-        document.body.appendChild(img)
-      }
-      show_image(outLink, "test image")
+      //verification system
+      var link1 = "https://drive.google.com/file/d/1GUrFutRv_PZBDcxM8koAo4G2EI92IA-X/view?usp=sharing";
+      var outLink1 = convGDriveLink(link1)
+      show_image(outLink1, "test image");
+      var outLink2 = convGDriveLink(link2);
+      var imageID2 = convGDriveLink(link2);
+      //goal: https://developers.google.com/drive/api/guides/manage-downloads#java
 
     </script>
-
   </body>
 </html>
