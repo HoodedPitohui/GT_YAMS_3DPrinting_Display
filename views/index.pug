@@ -1,20 +1,12 @@
 doctype html
 html
     head
-        title=title
-        link(rel='stylesheet', href='/styles/style.css')
+        title 3D Print Queue
+        link(rel='stylesheet', href='/css/body.css')
         meta(name='viewport' content='windth=device-width, initial-scale=1')
     body
-      .wrap
-          .profile.hide
-              a(href='#').menu
-                  span Movies
-          .information
-              .information__heading
-                  span.information__heading__tag= tag
-              h1.information__name
-                  small=firstname
-                  | #{lastname}
-              p.information__description= content
-    script(src='js/script.js')
-   
+        h2 3D Print Queue
+        iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
+        h2 Pro Print Queue
+        iframe(class = "proPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false")
+        h3 Current Files Printing
