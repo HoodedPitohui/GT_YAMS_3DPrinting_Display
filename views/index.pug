@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title=title
+        link(rel='stylesheet', href='/styles/style.css')
+        meta(name='viewport' content='windth=device-width, initial-scale=1')
+    body
+      .wrap
+          .profile.hide
+              a(href='#').menu
+                  span Movies
+          .information
+              .information__heading
+                  span.information__heading__tag= tag
+              h1.information__name
+                  small=firstname
+                  | #{lastname}
+              p.information__description= content
+    script(src='js/script.js')
+   
