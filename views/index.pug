@@ -11,7 +11,7 @@ html
         h2 Pro Print Queue
         iframe(class = "proPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false")
         h3 Current Files Printing
-        table(class = "output")
+        button(onclick = "export2txt()")
         script.
             const sheetId = '1MYRyMDRn3eRuRXmRlIxOsCuIFTb08BgBUngr9Mfpqt0';
             const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
@@ -21,50 +21,32 @@ html
             
             const data = []
             document.addEventListener('DOMContentLoaded', init)
-            
-            const output = document.querySelector('.output')
-            
             function init() {
                 fetch(url)
                     .then(res => res.text())
                     .then(rep => {
                         //Remove additional text and extract only JSON:
                         const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-                        console.log(rep)
-            
-                        const colz = [];
-                        const tr = document.createElement('tr');
-                        //Extract column labels
-                        jsonData.table.cols.forEach((heading) => {
-                            if (heading.label) {
-                                let column = heading.label;
-                                colz.push(column);
-                                const th = document.createElement('th');
-                                th.innerText = column;
-                                if (th.innerText === '.stl file') {
-                                    tr.appendChild(th);
-                                }
-                            }
-                        })
-                        output.appendChild(tr);
-                        //extract row data:
-                        jsonData.table.rows.forEach((rowData) => {
-                            const row = {};
-                            colz.forEach((ele, ind) => {
-                                row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
-                            })
-                            data.push(row);
-                        })
-                        processRows(data);
+                        export2txt(jsonData)
                     })
             }
-            function processRows(json) {
-                json.forEach((row) => {
-            
-                    const tr = document.createElement('tr');
-                    const keys = Object.keys(row);
-                    tr.appendChild('hello')
-
-                    output.appendChild(tr);
-                })
+            function export2txt(originalData) {
+                const a = document.createElement("a");
+                a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
+                    type: "text/plain"
+                }));
+                a.setAttribute("download", "data.txt");
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }
+            function download(content, fileName, contentType) {
+                var a = document.createElement("a");
+                var file = new Blob([content], {type: contentType});
+                a.href = URL.createObjectURL(file);
+                a.download = fileName;
+                a.click();
+            }            
+            function output(inp) {
+                document.body.appendChild(document.createElement('pre')).innerHTML = inp;
             }
