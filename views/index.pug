@@ -30,7 +30,7 @@ html
                         export2txt(jsonData)
                         testData = jsonData.table.rows[0].c[3].v;
                         testData2 = jsonData.table.rows[1].c[3].v;
-                        testData3 = testData + testData2;
+                        testData3 = [testData, testData2];
                         //testData.appendChild(jsonData.table.rows[1].c[3].v);
                         export2txt(testData3)
                     })
