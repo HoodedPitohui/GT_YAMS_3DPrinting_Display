@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.18.1",
     "fs": "^0.0.1-security",
+    "public-google-sheets-parser": "^1.2.6",
     "pug": "^3.0.2"
   }
 }

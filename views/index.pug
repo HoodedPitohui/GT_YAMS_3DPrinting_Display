@@ -28,6 +28,11 @@ html
                         //Remove additional text and extract only JSON:
                         const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
                         export2txt(jsonData)
+                        testData = jsonData.table.rows[0].c[3].v;
+                        testData2 = jsonData.table.rows[1].c[3].v;
+                        testData3 = testData + testData2;
+                        //testData.appendChild(jsonData.table.rows[1].c[3].v);
+                        export2txt(testData3)
                     })
             }
             function export2txt(originalData) {
