@@ -1,4 +1,4 @@
-doctype html
+doctype html <!-- This is for verifying the stl stuff -->
 html
     head
         title 3D Print Queue
@@ -7,105 +7,20 @@ html
         script(src = '/js/three.min.js')
         script(src = '/js/OrbitControls.js')
         script(src = '/js/STLLoader.js')
-        meta(name='viewport' content='windth=device-width, initial-scale=1')
+        script(src = '/js/stlviewer.js')
+        script(src = '/js/downloadFile.js')
+        script(src = '/js/WebGL.js')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
     body
         h2 3D Print Queue
         iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
-        h2 Pro Print Queue
-        iframe(class = "proPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false")
-        h3 Current Files Printing
-        div(id = "model" style = "width: 500px; height: 500px")
-        script.
-            const sheetId = '1MYRyMDRn3eRuRXmRlIxOsCuIFTb08BgBUngr9Mfpqt0';
-            const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-            const sheetName = 'Test';
-            const query = encodeURIComponent('Select *')
-            const url = `${base}&sheet=${sheetName}&tq=${query}`
-            
-            const data = []
-            document.addEventListener('DOMContentLoaded', init)
-            div(id = 'stl_cont')
-            function init() {
-                fetch(url)
-                    .then(res => res.text())
-                    .then(rep => {
-                        //Remove additional text and extract only JSON:
-                        const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-                        export2txt(jsonData)
-                        testData = jsonData.table.rows[0].c[3].v;
-                        testData2 = jsonData.table.rows[1].c[3].v;
-                        testData3 = [testData, testData2];
-                        //testData.appendChild(jsonData.table.rows[1].c[3].v);
-                        export2txt(testData3)
-                        var testID = "1wmh9v7eUp3-7EzqJTkSmEm0twshvMVfH";
+        img(src = "ninja.png")
+        script. 
+            window.onload = function() {
+                STLViewerEnable("stlviewer");
+            }
+        div(class = "stlviewer" data-src = "test2.stl")
 
-                        //using download link
-                        var url = "https://drive.google.com/uc?export=download&id=1qilo1so6jZ93efNNt7yE8tAxAQqBkegZ";
-                        openInNewTab(url)
-                        STLViewer("mystl.stl", "model")
-                    })
-            }
-            function STLViewer(model, elementID) {
-                var elem = document.getElementById(elementID)
-                var camera = new THREE.PerspectiveCamera(70, 
-                    elem.clientWidth/elem.clientHeight, 1, 1000);
-                var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-                    renderer.setSize(elem.clientWidth, elem.clientHeight);
-                    elem.appendChild(renderer.domElement);
-                window.addEventListener('resize', function () {
-                    renderer.setSize(elem.clientWidth, elem.clientHeight);
-                    camera.aspect = elem.clientWidth/elem.clientHeight;
-                    camera.updateProjectionMatrix();
-                }, false);
-                var controls = new THREE.OrbitControls(camera, renderer.domElement);
-                controls.enableDamping = true;
-                controls.rotateSpeed = 0.05;
-                controls.dampingFactor = 0.1;
-                controls.enableZoom = true;
-                controls.autoRotate = true;
-                controls.autoRotateSpeed = .75;
-                var scene = new THREE.Scene();
-                scene.add(new THREE.HemisphereLight(0xffffff, 1.5));
-                (new THREE.STLLoader()).load(model, function (geometry) {
-                var material = new THREE.MeshPhongMaterial({ 
-                    color: 0xff5533, 
-                    specular: 100, 
-                    shininess: 100 });
-                var mesh = new THREE.Mesh(geometry, material);
-                    scene.add(mesh);
-                var middle = new THREE.Vector3();
-                geometry.computeBoundingBox();
-                geometry.boundingBox.getCenter(middle);
-                mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation( 
-                                            -middle.x, -middle.y, -middle.z ) );
-                var largestDimension = Math.max(geometry.boundingBox.max.x,
-                            geometry.boundingBox.max.y, 
-                            geometry.boundingBox.max.z)
-                camera.position.z = largestDimension * 1.5;  
-                var animate = function () {
-                    requestAnimationFrame(animate);
-                    controls.update();
-                    renderer.render(scene, camera);
-                }; 
-                animate();
-                });
-            }
 
-            //experimental
-            function openInNewTab(url) {
-            window.open(url, '_blank').focus();
-            }
 
-            function export2txt(originalData) {
-                const a = document.createElement("a");
-                a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
-                    type: "text/plain"
-                }));
-                a.setAttribute("download", "data.txt");
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-            }          
-            function output(inp) {
-                document.body.appendChild(document.createElement('pre')).innerHTML = inp;
-            }
+

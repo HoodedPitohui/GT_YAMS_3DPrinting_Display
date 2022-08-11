@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
 app.get('/', (req, res) => {
   res.redirect('index')
 })
+
 app.listen(port, () => {
     console.log('http://localhost:5656')
 })
