@@ -10,15 +10,23 @@ html
         script(src = '/js/stlviewer.js')
         script(src = '/js/downloadFile.js')
         script(src = '/js/WebGL.js')
+        script(src = '/js/downloadSTL.js')
         meta(name='viewport' content='width=device-width, initial-scale=1')
     body
         h2 3D Print Queue
-        iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
+        div(class = "flex-container")
+            div(class = "flex-spreadsheet")
+                iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
+            div(class = "flex-stl1")
+                div(class = "stlviewer" data-src = "test2.stl")
+                div(class = "stlviewer" data-src = "test2.stl")
+            div(class = "flex-stl2")
+                div(class = "stlviewer" data-src = "test2.stl")
+                div(class = "stlviewer" data-src = "test2.stl")
         h2 Pro Print Queue
         iframe(class = "proPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false")
         h3 Current Files Printing
         img(src = "ninja2.jpg")
-        div(class = "stlviewer" data-src = "test2.stl")
         script.
             const sheetId = '1MYRyMDRn3eRuRXmRlIxOsCuIFTb08BgBUngr9Mfpqt0';
             const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;

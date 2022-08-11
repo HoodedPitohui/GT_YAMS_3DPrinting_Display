@@ -22,6 +22,7 @@
     "google-apis": "^1.0.0",
     "google-auth-library": "^8.1.1",
     "public-google-sheets-parser": "^1.2.6",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "puppeteer": "^16.1.0"
   }
 }
