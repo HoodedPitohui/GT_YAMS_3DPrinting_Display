@@ -3,6 +3,7 @@ const PublicGoogleSheetsParser = require('public-google-sheets-parser')
 const app = express()
 const port = process.env.PORT || 5656;
 app.use(express.static(__dirname + '/public'));
+app.use(express.static('/Users/kshaj/Downloads'));
 app.set('view engine', 'pug');
 app.get('/', (req, res) => {
     res.render('index')
