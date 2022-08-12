@@ -21,6 +21,7 @@
     "fs": "^0.0.1-security",
     "google-apis": "^1.0.0",
     "google-auth-library": "^8.1.1",
+    "path": "^0.12.7",
     "public-google-sheets-parser": "^1.2.6",
     "pug": "^3.0.2",
     "puppeteer": "^16.1.0"

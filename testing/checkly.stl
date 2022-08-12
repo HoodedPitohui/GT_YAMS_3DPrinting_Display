@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Serebii.net - Where Legends Come To Life</title>
+	
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossorigin>
+<link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossorigin>
+<link rel="preconnect" href="https://kumo.network-n.com/" crossorigin>
+<meta http-equiv="imagetoolbar" CONTENT="no">
+	<link rel="stylesheet" type="text/css" href="/style/layout.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-meta">
+
+<!-- GDPR Compliancy -->
+<style>
+body {
+	--cmpBgColor: #507C36;
+	--cmpTextColor: #000000;
+	--cmpLinkColor: #ffffff;
+	--cmpPurposesColor: #000000;
+	--cmpBrandColor: #000000;
+	--cmpLogo: url('https://www.serebii.net/extralogo.png');
+}
+</style>
+<!-- GDPR Compliancy -->
+
+<link rel="search" href="/serebii-opensearch.xml" type="application/opensearchdescription+xml" title="Serebii Open Search" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128947957-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-128947957-1');
+</script>
+<!-- Place the below code anywhere you like in the <head> (higher is better) -->
+
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+
+<script async  src="https://kumo.network-n.com/dist/app.js" site="serebii"></script>
+
+
+<meta name="keywords" content="Serebii, Pokémon, Pokémon News, Pokemon News, Pocket Monsters, Pokédex, Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, Pokémon Ultra Moon, Pokémon GO, Pokémon Let's Go Pikachu, Pokémon Let's Go Eevee, Pokémon Animé, Animé, TCG, Pokémon TCG" />
+<meta name="description" content="Contains up-to-date news, databases and information about all Pokémon Games, TCG sets and the TV show." />
+
+<link rel="canonical" href="https://www.serebii.net/index2.shtml" />
+
+<link rel="stylesheet" href="/style/spp-news.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/style/tablenew.css" type="text/css" media="screen" />
+
+
+
+
+</head>
+<body>
+<script type="text/javascript">
+	var viewport_meta = document.getElementById('viewport-meta');
+	var viewport_timer;
+
+	// these body*Class are reused in the lbar mobile menu
+	function bodyAddClass(className){
+		if(document.body) document.body.classList.add(className);
+	}
+	function bodyRemoveClass(className){
+		if(document.body) document.body.className = document.body.className.replace(className,"");
+	}
+
+	function viewport_set() {
+		// Define our viewport meta values
+		var viewports = {
+			default: viewport_meta.getAttribute('content'),
+			mobileL: 'width=device-width,initial-scale=0.75',
+			mobileM: 'width=device-width,initial-scale=0.5',
+			mobileS: 'width=device-width,initial-scale=0.4'
+		};
+
+		// Change the viewport value based on screen.width
+		if(screen.width < 370){
+			viewport_meta.setAttribute('content', viewports.mobileS);
+			bodyAddClass("nav_mobileS");
+			bodyRemoveClass("nav_mobileM");
+			bodyRemoveClass("nav_mobileL");
+		} else if(screen.width < 505){
+			viewport_meta.setAttribute('content', viewports.mobileM);
+			bodyRemoveClass("nav_mobileS");
+			bodyAddClass("nav_mobileM");
+			bodyRemoveClass("nav_mobileL");
+		} else if (screen.width < 760){
+			viewport_meta.setAttribute('content', viewports.mobileL);
+			bodyRemoveClass("nav_mobileS");
+			bodyRemoveClass("nav_mobileM");
+			bodyAddClass("nav_mobileL");
+		} else{
+			viewport_meta.setAttribute('content', viewports.default);
+			bodyRemoveClass("nav_mobileS");
+			bodyRemoveClass("nav_mobileM");
+			bodyRemoveClass("nav_mobileL");
+		}
+	}
+
+	// Set the correct viewport value on page load
+	viewport_set();
+
+	/* attach listener to (delay) set the correct viewport after device orientation change or resize. also onload so the nav_mobile* class gets added to body AFTER <body> has loaded */
+	if(window.addEventListener){
+		window.addEventListener('load', viewport_set);
+		window.addEventListener('resize', function(){
+			clearTimeout(viewport_timer);
+			viewport_timer = setTimeout(viewport_set, 100);
+		})
+	} else{
+		window.attachEvent('onload', viewport_set)
+		window.attachEvent('onresize', function(){
+			clearTimeout(viewport_timer);
+			viewport_timer = setTimeout(viewport_set, 100);
+		})
+	}
+
+</script>
+
+
+<header id="header">
+	<div class="banner">
+		<a href="/"><img src="/Banner.jpg" alt="Serebii.net Header" style="height:139px"></a>
+	</div>
+
+	<nav class="quicklinks">
+		<ul>
+			<li><b>Quick Links</b></li>
+			<li><a href="/index2.shtml">Home</a></li>
+			<li><a href="https://forums.serebii.net/" target="blank">Forums</a></li>
+			<li><a href="mailto:webmaster@serebii.net">Contact</a></li>
+			<li><a href="/discord.shtml">Discord</a></li>
+			<li><a href="/pokemon">Pokédex Hub</a></li>
+			<li><a href="/pokemongo/pokemon">GO Pokédex</a></li>
+			<li><a href="/pokedex-swsh">Sword & Shield Pokédex</a></li>
+			<li><a href="/pokearth">Pokéarth</a></li>
+
+			<li class="search">
+				<form id="searchbox_018410473690156091934:6gahkiyodbi" action="/search.shtml" style="margin:0px;">
+					<input type="hidden" name="cx" value="018410473690156091934:6gahkiyodbi" />
+					<input type="hidden" name="cof" value="FORID:11" />
+					<input name="q" type="text" size="20" />
+					<input type="submit" name="sa" value="Search" />
+				</form>
+				<script type="text/javascript" src="//www.google.com/coop/cse/brand?form=searchbox_018410473690156091934%3A6gahkiyodbi"></script>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<div id="wrapper">
+
+<ul id="tbar_sticky">
+	<li>
+		<a href="#lbar" class="navheader" id="tbar_lbar_open"><img src="/hidden/2019-04/burger.svg"></a>
+	</li>
+	<li>
+		<form id="searchbox_018410473690156091934:6gahkiyodbi" action="/search.shtml" style="margin:0px;">
+			<input type="hidden" name="cx" value="018410473690156091934:6gahkiyodbi" />
+			<input type="hidden" name="cof" value="FORID:11" />
+			<input name="q" type="search" placeholder="Search Serebii.net..." />
+		</form>
+	</li>
+	<li>
+		<a href="#rbar" class="navheader" id="tbar_rbar_open" style="padding-right:20px"><img src="/hidden/2019-04/burger.svg"></a>
+	</li>
+</ul>
+<div id="tbar_backdrop"></div>
+
+<nav id="lbar">
+	<ul id="lbar_ul">
+		<li>
+			<a href="/" class="navheader">Databases</a>
+			<ul>
+				<li><a href="/index2.shtml">News</a>
+				<li><a href="/archive.shtml">Archived news</a></li>
+				<li><a href="/pokemon/"><b>Pokédex</b></a></li>
+				<li><a href="/pokedex/">-Red/Blue Pokédex</a></li>
+				<li><a href="/pokedex-gs/">-Gold/Silver Pokédex</a></li>
+				<li><a href="/pokedex-rs/">-Ruby/Sapphire Pokédex</a></li>
+				<li><a href="/pokedex-dp/">-Diamond/Pearl Pokédex</a></li>
+				<li><a href="/pokedex-bw/">-Black/White Pokédex</a></li>
+				<li><a href="/pokedex-xy/">-X & Y Pokédex</a></li>
+				<li><a href="/pokedex-sm/">-Sun & Moon Pokédex</a></li>
+				<li><a href="/pokedex-sm/">-Let's Go Pokédex</a></li>
+				<li><a href="/pokedex-swsh/">-Sword & Shield Pokédex</a></li>
+				<li><a href="/pokedex-swsh/">-BDSP Pokédex</a></li>
+				<li><a href="/pokedex-swsh/">-Legends Pokédex</a></li>
+				<li><a href="/pokemongo/pokemon/">-GO Pokédex</a></li>
+
+				<li><strong>Attackdex</strong></li>
+				<li><a href="/attackdex-rby/">-Gen 1 Attackdex</a></li>
+				<li><a href="/attackdex-gs/">-Gen 2 Attackdex</a></li>
+				<li><a href="/attackdex/">-Gen 3 Attackdex</a></li>
+				<li><a href="/attackdex-dp/">-Gen 4 Attackdex</a></li>
+				<li><a href="/attackdex-bw/">-Gen 5 Attackdex</a></li>
+				<li><a href="/attackdex-xy/">-Gen 6 Attackdex</a></li>
+				<li><a href="/attackdex-sm/">-Gen 7 Attackdex</a></li>
+				<li><a href="/attackdex-swsh/">-Gen 8 Attackdex</a></li>
+				<li><a href="/itemdex/">ItemDex</a></li>
+				<li><a href="/pokearth/">Pokéarth</a></li>
+				<li><a href="/abilitydex/">Abilitydex</a></li>
+				<li><a href="/spindex/">Spin-Off Pokédex</a></li>
+				<li><a href="/spindex-dp/">Spin-Off Pokédex DP</a></li>
+				<li><a href="/spindex-bw/">Spin-Off Pokédex BW</a></li>
+				<li><a href="/card/dex/">Cardex</a></li>
+				<li><a href="/movies/dex/">Cinematic Pokédex</a></li>
+				<li><a href="/games/mechanics.shtml">Game Mechanics</a></li>
+				<li><a href="/games/iv-calcswsh.shtml">-Sword/Shield IV Calc.</a></li>
+				<li><a href="/potw-swsh">Pokémon of the Week</a></li>
+				<li><a href="/potw-swsh/">-8th Gen</a></li>
+				<li><a href="/potw-sm/">-7th Gen</a></li>
+				<li><a href="/pokemon/timeline.shtml">Pokémon Timeline</a></li>
+				<li><a href="/pokemoncenter/">Pokémon Centers</a></li>
+				<li><a href="/playpokemon">Pokémon Championship Series</a></li>
+				<li><a href="/music/p25music">P25 Music</a></li>
+				<li><a href="/pokemonday/">Pokémon Day</a></li>
+				<li><a href="/presentations">Pokémon Presentations</a></li>
+				<li><a href="/pokemonshirts/">Pokémon Shirts</a></li>
+				<li><a href="http://www.serebiiforums.com" target="blank">Forums</a></li>
+				<li><a href="/discord.shtml">Discord Chat</a></li>
+				<li><a href="/games/currentevents.shtml">Current & Upcoming Events</a></li>
+				<li><a href="/events">Event Database</a></li>
+				<li><a href="/scarletviolet/pokemon.shtml">9th Generation Pokémon</a></li>
+				<li><a href="/scarletviolet/paldeanforms.shtml">-Paldean Form Pokémon</a></li>
+
+			</ul>
+		</li>
+
+
+		<li>
+			<a href="/anime/" class="navheader">Anime</a>
+			<ul>
+				<li><a href="/anime/epiguide/">Episode Listings & Pictures</a>
+				<li><a href="/anime/dex/">AniméDex</a></li>
+				<li><a href="/anime/characters/">Character Bios</a></li>
+				<li><a href="/anime/epiguide/indigo/">The Indigo League</a></li>
+				<li><a href="/anime/epiguide/orange/">The Orange League</a></li>
+				<li><a href="/anime/epiguide/johto/">The Johto Saga</a></li>
+				<li><a href="/anime/epiguide/houen/">The Saga in Hoenn!</a></li>
+				<li><a href="/anime/epiguide/kanto/">Kanto Battle Frontier Saga!</a></li>
+				<li><a href="/anime/epiguide/shinou/">The Sinnoh Saga!</a></li>
+				<li><a href="/anime/epiguide/bestwishes/">Best Wishes - Unova Saga</a></li>
+				<li><a href="/anime/epiguide/xy/">XY - Kalos Saga</a></li>
+				<li><a href="/anime/epiguide/sunmoon/">Sun & Moon - Alola Saga</a></li>
+				<li><a href="/anime/epiguide/pokemon/">Pokémon Journeys - Galar Saga</a></li>
+				<li><a href="/anime/epiguide/chronicles/">Pokémon Chronicles</a></li>	
+				<li><a href="/anime/epiguide/specials/">The Special Episodes</a></li>
+				<li><a href="/anime/banned.shtml">The Banned Episodes</a></li>
+				<li><a href="/anime/shiny/">Shiny Pokémon</a></li>
+<li><b>Other Web Series</b></li>
+				<li><a href="/anime/epiguide/generations/">Pokémon Generations</a></li>
+				<li><a href="/anime/epiguide/twilightwings/">Pokémon Twilight Wings</a></li>
+				<li><a href="/anime/epiguide/evolutions/">Pokémon Evolutions</a></li>
+				<li><a href="/anime/hisuiansnow/">Pokémon: Hisuian Snow</a></li>
+				<li><a href="/anime/poketoon/">PokéToon</a></li>
+				<li><a href="/anime/other/">Other Animations</a></li>
+
+
+			</ul>
+		</li>
+
+		<li>
+			<a href="/games/" class="navheader">Video Games</a>
+			<ul>
+				<li><a href="/pokemon/generation9.shtml"><b>Gen IX</b></a></li>
+				<li><a href="/scarletviolet/">Scarlet & Violet</a></li>
+
+				<li><a href="/pokemon/generation8.shtml"><b>Gen VIII</b></a></li>
+				<li><a href="/swordshield/">Sword & Shield</a></li>
+				<li><a href="/brilliantdiamondshiningpearl/">Brilliant Diamond & Shining Pearl</a></li>
+				<li><a href="/legendsarceus/">Pokémon Legends: Arceus</a></li>
+				<li><a href="/pokemonhome/">Pokémon HOME</a></li>
+				<li><a href="/pokemongo/">Pokémon GO</a></li>
+				<li><a href="/pokemonmasters/">Pokémon Masters EX</a></li>
+				<li><a href="/dungeonrescueteamdx/">Pokémon Mystery Dungeon Rescue Team DX</a></li>
+				<li><a href="/pokemonsmile/">Pokémon Smile</a></li>
+				<li><a href="/cafemix/">Pokémon Café ReMix</a></li>
+				<li><a href="/newpokemonsnap/">New Pokémon Snap</a></li>
+				<li><a href="/pokemonunite/">Pokémon UNITE</a></li>
+				<li><a href="/pokemonsleep/">Pokémon Sleep</a></li>
+				<li><a href="/detectivepikachu2/">Detective Pikachu 2</a></li>
+				<li><a href="/tcglive/">Pokémon TCG Live</a></li>
+
+				<li><a href="/pokemon/generation7.shtml"><b>Gen VII</b></a></li>
+				<li><a href="/sunmoon/">Sun & Moon</a></li>
+				<li><a href="/ultrasunultramoon/">Ultra Sun & Ultra Moon</a></li>
+				<li><a href="/letsgopikachueevee/">Let's Go, Pikachu! & Let's Go, Eevee!</a></li>
+				<li><a href="/pokemongo/">Pokémon GO</a></li>
+				<li><a href="/magikarpjump/">Pokémon: Magikarp Jump</a></li>
+				<li><a href="/rumblerush/">Pokémon Rumble Rush</a></li>
+				<li><a href="/pokkendx/">Pokkén Tournament DX</a></li>
+				<li><a href="/detective/">Detective Pikachu</a></li>
+				<li><a href="/quest/">Pokémon Quest</a></li>
+				<li><a href="/smashbrosultimate/">Super Smash Bros. Ultimate</a></li>
+				<li><a href="/pokemon/generation6.shtml"><b>Gen VI</b></a></li>
+				<li><a href="/xy/">X & Y</a></li>
+				<li><a href="/omegarubyalphasapphire/">Omega Ruby & Alpha Sapphire</a></li>
+				<li><a href="/bank/">Pokémon Bank</a></li>
+				<li><a href="/battletrozei/">Pokémon Battle TrozeiPokémon Link: Battle</a></li>
+				<li><a href="/artacademy/">Pokémon Art Academy</a></li>
+				<li><a href="/bandofthieves/">The Band of Thieves & 1000 Pokémon</a></li>
+				<li><a href="/shuffle/">Pokémon Shuffle</a></li>
+				<li><a href="/rumbleworld/">Pokémon Rumble World</a></li>
+				<li><a href="/supermysterydungeon/">Pokémon Super Mystery Dungeon</a></li>
+				<li><a href="/picross/">Pokémon Picross</a></li>
+				<li><a href="/detective/">Detective Pikachu</a></li>
+				<li><a href="/pokken/">Pokkén Tournament</a></li>
+				<li><a href="/duel/">Pokémon Duel</a></li>
+				<li><a href="/smashbros3dswiiu/">Smash Bros for 3DS/Wii U</a></li>
+				<li><a href="/games/badge/">Nintendo Badge Arcade</a></li>
+				<li><a href="/pokemon/generation5.shtml"><b>Gen V</b></a></li>
+				<li><a href="/blackwhite/">Black & White</a></li>
+				<li><a href="/black2white2/">Black 2 & White 2</a></li>
+				<li><a href="/dreamradar/">Pokémon Dream Radar</a></li>
+				<li><a href="/trettalab/">Pokémon Tretta Lab</a></li>
+				<li><a href="/rumbleu/">Pokémon Rumble U</a></li>
+				<li><a href="/dungeoninfinity/">Mystery Dungeon: Gates to Infinity</a></li>
+				<li><a href="/conquest/">Pokémon Conquest</a></li>
+				<li><a href="/pokepark2/">PokéPark 2: Wonders Beyond</a></li>
+				<li><a href="/rumble2/">Pokémon Rumble Blast</a></li>
+				<li><a href="/pokedex3d/">Pokédex 3D</a></li>
+				<li><a href="/pokedex3dpro/">Pokédex 3D Pro</a></li>
+				<li><a href="/typingds/">Learn With Pokémon: Typing Adventure</a></li>
+				<li><a href="/card/howtoplayds/">TCG How to Play DS</a></li>
+				<li><a href="/pokedexios/">Pokédex for iOS</a></li>
+				<li><a href="/pokemon/generation4.shtml"><b>Gen IV</b></a></li>
+				<li><a href="/diamondpearl/">Diamond & Pearl</a></li>
+				<li><a href="/platinum/">Platinum</a></li>
+				<li><a href="/heartgoldsoulsilver/">Heart Gold & Soul Silver</a></li>
+				<li><a href="/ranger3/">Pokémon Ranger: Guardian Signs</a></li>
+				<li><a href="/melee/">Pokémon Rumble</a></li>
+				<li><a href="/dungeon3/">Mystery Dungeon: Blazing, Stormy & Light Adventure Squad</a></li>
+				<li><a href="/pokepark/">PokéPark Wii - Pikachu's  Adventure</a></li>
+				<li><a href="/battle/">Pokémon Battle Revolution</a></li>
+				<li><a href="/dungeonsky/">Mystery Dungeon - Explorers of Sky</a></li>
+				<li><a href="/ranger2/">Pokémon Ranger: Shadows of Almia</a></li>
+				<li><a href="/dungeon2/">Mystery Dungeon - Explorers of Time & Darkness</a></li>
+				<li><a href="/ranch/">My Pokémon Ranch</a></li>
+				<li><a href="/battrio/">Pokémon Battrio</a></li>
+				<li><a href="/ssbb/">Smash Bros Brawl</a></li>
+				<li><a href="/pokemon/generation3.shtml"><b>Gen III</b></a></li>
+				<li><a href="/rubysapphire/">Ruby & Sapphire</a></li>
+				<li><a href="/fireredleafgreen/">Fire Red & Leaf Green</a></li>
+				<li><a href="/emerald/">Emerald</a></li>
+				<li><a href="/colosseum/">Pokémon Colosseum</a></li>
+				<li><a href="/xd/">Pokémon XD: Gale of Darkness</a></li>
+				<li><a href="/dash/">Pokémon Dash</a></li>
+				<li><a href="/pokemon_channel/">Pokémon Channel</a></li>
+				<li><a href="/pokemon_box/">Pokémon Box: RS</a></li>
+				<li><a href="/pinball_rs/">Pokémon Pinball RS</a></li>
+				<li><a href="/ranger/">Pokémon Ranger</a></li>
+				<li><a href="/mysteriousdungeon/">Mystery Dungeon Red & Blue</a></li>
+				<li><a href="/torouze/">PokémonTrozei</a></li>
+				<li><a href="/pikachu/">Pikachu DS Tech Demo</a></li>
+				<li><a href="/pokeparkfish/">PokéPark Fishing Rally</a></li>
+				<li><a href="/e-reader/">The E-Reader</a></li>
+				<li><a href="/pokemate/">PokéMate</a></li>
+				<li><a href="/pokemon/generation2.shtml"><b>Gen II</b></a></li>
+				<li><a href="/gs/">Gold/Silver</a></li>
+				<li><a href="/crystal/">Crystal</a></li>
+				<li><a href="/stadium2/">Pokémon Stadium 2</a></li>
+				<li><a href="/puzzlechallenge/">Pokémon Puzzle Challenge</a></li>
+				<li><a href="/mini/">Pokémon Mini</a></li>
+				<li><a href="/smash_bros_2/">Super Smash Bros. Melee</a></li>
+				<li><a href="/pokemon/generation1.shtml"><b>Gen I</b></a></li>
+				<li><a href="/rb/">Red, Blue & Green</a></li>
+				<li><a href="/yellow/">Yellow</a></li>
+				<li><a href="/puzzleleague/">Pokémon Puzzle League</a></li>
+				<li><a href="/snap/">Pokémon Snap</a></li>
+				<li><a href="/pinball/">Pokémon Pinball</a></li>
+				<li><a href="/stadiumjp/">Pokémon Stadium (Japanese)</a></li>
+				<li><a href="/stadium/">Pokémon Stadium</a></li>
+				<li><a href="/tradingcardgamegb/">Pokémon Trading Card Game GB</a></li>
+				<li><a href="/smash_bros/">Super Smash Bros.</a></li>
+
+				<li><strong>Miscellaneous</strong></li>
+				<li><a href="/games/mechanics.shtml">Game Mechanics</a></li>
+				<li><a href="/playpokemon">Pokémon Championship Series</a></li>
+				<li><a href="/games/others.shtml">In Other Games</a></li>
+				<li><a href="/games/virtualconsole.shtml">Virtual Console</a></li>
+				<li><a href="/games/consoles.shtml">Special Edition Consoles</a></li>
+				<li><a href="/games/themes.shtml">Pokémon 3DS Themes</a></li>
+				<li><a href="/apps">Smartphone & Tablet Apps</a></li>
+				<li><a href="/virtualpet">Virtual Pets</a></li>
+				<li><a href="/amiibo">amiibo</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/manga/" class="navheader">Manga</a>
+			<ul>
+				<li><a href="/manga/">General Information</a>
+				<li><a href="/manga/dex">MangaDex</a></li>
+				<li><a href="/manga/characters">Character BIOs</a></li>
+				<li><a href="/manga/characters-new">Detailed BIOs</a></li>
+				<li><a href="/manga/chapter.shtml">Chapter Guides</a></li>
+				<li><a href="/manga/volume.shtml">Volume Guides</a></li>
+				<li><a href="/manga/rby/">RBG Series</a></li>
+				<li><a href="/manga/yellow/">Yellow Series</a></li>
+				<li><a href="/manga/gsc/">GSC Series</a></li>
+				<li><a href="/manga/rs/">RS Series</a></li>
+				<li><a href="/manga/frlg/">FRLG Series</a></li>
+				<li><a href="/manga/bf/">Emerald Series</a></li>
+				<li><a href="/manga/dp/">DP Series</a></li>
+				<li><a href="/manga/pt/">Platinum Series</a></li>
+				<li><a href="/manga/hgss/">HGSS Series</a></li>
+				<li><a href="/manga/bw/">BW Series</a></li>
+				<li><a href="/manga/b2w2/">B2W2 Series</a></li>
+				<li><a href="/manga/xy/">XY Series</a></li>
+				<li><a href="/manga/oras/">ORAS Series</a></li>
+				<li><a href="/manga/sunmoon/">SM Series</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/movies/" class="navheader">Movies</a>
+			<ul>
+				<li><strong>Anime</strong></li>
+				<li><a href="/movies/mewtwo/origin/">The Origin of Mewtwo</a></li>
+				<li><a href="/movies/mewtwo/">Mewtwo Strikes Back</a></li>
+				<li><a href="/movies/lugia/">The Power of One</a></li>
+				<li><a href="/movies/entei/">Spell Of The Unown</a></li>
+				<li><a href="/anime/epiguide/specials/002.shtml">Mewtwo Returns</a></li>
+				<li><a href="/movies/serebii/">Celebi: Voice of the Forest</a></li>
+				<li><a href="/movies/latias_latios/">Pokémon Heroes</a></li>
+				<li><a href="/movies/jirachi/">Jirachi - Wish Maker</a></li>
+				<li><a href="/movies/deoxys/">Destiny Deoxys!</a></li>
+				<li><a href="/movies/mew/">Lucario and the Mystery of Mew!</a></li>
+				<li><a href="/movies/kyogre/">Pokémon Ranger & The Temple of the Sea!</a></li>
+				<li><a href="/movies/dp/">The Rise of Darkrai!</a></li>
+				<li><a href="/movies/giratina/">Giratina & The Sky Warrior!</a></li>
+				<li><a href="/movies/arceus/">Arceus and the Jewel of Life</a></li>
+				<li><a href="/movies/celebi/">Zoroark - Master of Illusions</a></li>
+				<li><a href="/movies/victini/">Black: Victini & ReshiramWhite: Victini & Zekrom</a></li>
+				<li><a href="/movies/kyurem/">Kyurem VS The Sword of Justice</a></li>
+				<li><a href="/movies/meloetta/">-Meloetta's Midnight Serenade</a></li>
+				<li><a href="/movies/genesect/">Genesect and the Legend Awakened</a></li>
+				<li><a href="/movies/xy/">Diancie & The Cocoon of Destruction</a></li>
+				<li><a href="/movies/hoopa/">Hoopa & The Clash of Ages</a></li>
+				<li><a href="/movies/volcanion/">Volcanion and the Mechanical Marvel</a></li>
+				<li><a href="/movies/pokemon20/">Pokémon I Choose You!</a></li>
+				<li><a href="/movies/thepowerofus/">Pokémon The Power of Us</a></li>
+				<li><a href="/movies/mewtwoevolution/">Mewtwo Strikes Back Evolution</a></li>
+				<li><a href="/movies/secretsofthejungle/">Secrets of the Jungle</a></li>
+				<li><strong>Live Action</strong></li>
+				<li><a href="/movies/detectivepikachu/">Pokémon Detective Pikachu</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/movies/" class="navheader">Pikachu Shorts</a>
+			<ul>
+				<li><a href="/movies/pikachu1/">Pikachu's Summer Vacation</a></li>
+				<li><a href="/movies/pikachu2/">Pikachu's Rescue Adventure</a></li>
+				<li><a href="/movies/pikachu3/">Pikachu And Pichu</a></li>
+				<li><a href="/movies/pikachu4/">Pikachu's PikaBoo</a></li>
+				<li><a href="/movies/pikachu5/">Camp Pikachu!</a></li>
+				<li><a href="/movies/pikachu6/">Gotta Dance!!</a></li>
+				<li><a href="/movies/pikachu7/">Pikachu's Summer Festival!</a></li>
+				<li><a href="/movies/pikachu8/">Pikachu's Ghost Festival!</a></li>
+				<li><a href="/movies/pikachu9/">Pikachu's Island Adventure!</a></li>
+				<li><a href="/movies/pikachu10/">Pikachu's Exploration Club</a></li>
+				<li><a href="/movies/pikachu11/">Pikachu's Great Ice Adventure</a></li>
+				<li><a href="/movies/pikachu12/">Pikachu's Sparkling Search</a></li>
+				<li><a href="/movies/pikachu13/">Pikachu's Really Mysterious Adventure</a></li>
+				<li><a href="/movies/eevee/">Eevee & Friends</a></li>
+				<li><a href="/movies/klefki/">Pikachu, What's This Key?</a></li>
+				<li><a href="/movies/pikachumusic/">Pikachu & The Pokémon Music Squad</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/card/" class="navheader">Trading Cards</a>
+			<ul>
+				<li><a href="/tcglive/">Pokémon TCG Live</a></li>
+				<li><a href="/card/dex/">Cardex</a></li>
+				<li><a href="/card/dex/extra">-Extra Pokémon Types</a></li>
+				<li><a href="/card/dex/trainers">Trainer Cards</a></li>
+				<li><a href="/card/dex/energy">Energy Cards</a></li>
+				<li><a href="/card/dex/extra/altart.shtml">Alternate Art Cards</a></li>
+				<li><a href="/card/raidbattles">Raid Battles</a></li>
+				<li><a href="/card/english.shtml"><b>English Sets</b></a></li>
+				<li><a href="/card/lostorigin/">-Lost Origin</a></li>
+
+				<li><a href="/card/pokemongo">-Pokémon GO x Pokémon TCG</a></li>
+				<li><a href="/card/astralradiance">-Astral Radiance</a></li>
+				<li><a href="/card/brilliantstars">-Brilliant Stars</a></li>
+				<li><a href="/card/fusionstrike">-Fusion Strike</a></li>
+				<li><a href="/card/celebrations">-Celebrations</a></li>
+				<li><a href="/card/evolvingskies">-Evolving Skies</a></li>
+				<li><a href="/card/chillingreign">-Chilling Reign</a></li>
+				<li><a href="/card/battlestyles">-Battle Styles</a></li>
+				<li><a href="/card/shiningfates">-Shining Fates</a></li>
+				<li><a href="/card/vividvoltage">-Vivid Voltage</a></li>
+				<li><a href="/card/champion'spath">-Champion's Path</a></li>
+				<li><a href="/card/darknessablaze">-Darkness Ablaze</a></li>
+				<li><a href="/card/rebelclash">-Rebel Clash</a></li>
+				<li><a href="/card/swordshield">-Sword & Shield</a></li>
+				<li><a href="/card/cosmiceclipse">-Cosmic Eclipse</a></li>
+				<li><a href="/card/hiddenfates">-Hidden Fates</a></li>
+				<li><a href="/card/unifiedminds">-Unified Minds</a></li>
+				<li><a href="/card/unbrokenbonds">-Unbroken Bonds</a></li>
+				<li><a href="/card/pokemondetectivepikachu">-Detective Pikachu</a></li>
+				<li><a href="/card/teamup">-Team Up</a></li>
+				<li><a href="/card/sm.shtml">-SM Series</a></li>
+				<li><a href="/card/xy.shtml">-XY Series</a></li>
+				<li><a href="/card/bw.shtml">-BW Series</a></li>
+				<li><a href="/card/dpt.shtml">-DPtHS Series</a></li>
+				<li><a href="/card/ex.shtml">-EX Series</a></li>
+				<li><a href="/card/neo.shtml">-Neo/eSeries</a></li>
+				<li><a href="/card/first.shtml">-First Gen Series</a></li>
+				<li><a href="/card/engpromo.shtml"><b>English Promos</b></a></li>
+				<li><a href="/card/swshpromos">-SWSH Promos</a></li>
+				<li><a href="/card/smpromos">-SM Promos</a></li>
+				<li><a href="/card/xypromos">-XY Promos</a></li>
+				<li><a href="/card/bwpromos">-BW Promos</a></li>
+				<li><a href="/card/hgsspromo">-HGSS Promo</a></li>
+				<li><a href="/card/popseries.shtml">-POP Series</a></li>
+				<li><a href="/card/japanese.shtml"><b>Japanese Sets</b></a></li>
+				<li><a href="/card/incandescentarcana/">-Incandescent Arcana</a></li>
+				<li><a href="/card/lostabyss">-Lost Abyss</a></li>
+				<li><a href="/card/darkphantasma">-Dark Phantasma</a></li>
+				<li><a href="/card/spacejuggler">-Space Juggler</a></li>
+				<li><a href="/card/timegazer">-Time Gazer</a></li>
+				<li><a href="/card/battleregion">-Battle Region</a></li>
+				<li><a href="/card/starbirth">-Star Birth</a></li>
+				<li><a href="/card/vmaxclimax">-VMAX Climax</a></li>
+				<li><a href="/card/fusionarts">-Fusion Arts</a></li>
+				<li><a href="/card/blueskystream">-Blue Sky Stream</a></li>
+				<li><a href="/card/skyscrapingperfect">-Skyscraping Perfect</a></li>
+				<li><a href="/card/eeveeheroes">-Eevee Heroes</a></li>
+				<li><a href="/card/silverlance">-Silver Lance</a></li>
+				<li><a href="/card/jetblackpoltergeist">-Jet Black Poltergeist</a></li>
+				<li><a href="/card/matchlessfighter">-Matchless Fighter</a></li>
+				<li><a href="/card/singlestrikemaster">-Single Strike Master</a></li>
+				<li><a href="/card/rapidstrikemaster">-Rapid Strike Master</a></li>
+				<li><a href="/card/shinystarv">-Shiny Star V</a></li>
+				<li><a href="/card/sword">-Sword</a></li>
+				<li><a href="/card/shield">-Shield</a></li>
+				<li><a href="/card/tagallstars">-Tag All Stars</a></li>
+				<li><a href="/card/vs">-Pokémon VS</a></li>
+				<li><a href="/card/jppromo.shtml"><b>Japanese Promos</b></a></li>
+				<li><a href="/card/spromo">-S Promos</a></li>
+				<li><a href="/card/smpromo">-SM Promos</a></li>
+
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+
+<script type="text/javascript">
+
+function loadMobileLbar(){
+	var tbar_lbar_open=document.getElementById('tbar_lbar_open'),
+		tbar_backdrop=document.getElementById('tbar_backdrop'),
+		lbar=document.getElementById('lbar'),
+		lbarLIs=document.querySelectorAll("#lbar_ul>li .navheader"),
+		lbarLIULs=document.querySelectorAll("#lbar_ul>li>ul");
+
+	/* lbar display/hide */
+	tbar_lbar_open.onclick=function() {
+		if (lbar.className.indexOf("show") > -1){//hide
+			lbar.className = lbar.className.replace("show","");
+			bodyRemoveClass("nav_modal");
+		} else{//show
+			lbar.classList.add("show");
+			bodyAddClass("nav_modal");
+		}
+
+		return false;
+	}
+
+
+	/* background clicked when bar shown */
+	tbar_backdrop.onclick=function() {// if the backdrop is clicked, hide menus
+		lbar.className = lbar.className.replace("show","");
+		rbar.className = rbar.className.replace("show","");
+		bodyRemoveClass("nav_modal");
+		return false;
+	}
+
+	/* handle expand/collapse sub-menus in lbar by attaching click events */
+	for(i=0; i<lbarLIs.length; i++){
+		lbarLIs[i].onclick=function(i) {
+			var elem=this.parentNode.getElementsByTagName("UL")[0];
+			var elemDisp=(elem.className.indexOf("show") === -1)
+
+			// hide all ul, then open one if clicked
+			for(i2=0; i2<lbarLIULs.length; i2++){
+				lbarLIULs[i2].className = lbarLIULs[i2].className.replace("show","");
+			}
+
+			if(elemDisp){
+				elem.classList.add("show");
+			}
+
+			return false;
+		}
+	}
+}
+function loadMobileRbar(){
+	var tbar_rbar_open=document.getElementById('tbar_rbar_open'),
+		rbar=document.getElementById('rbar');
+
+	/* rbar display/hide */
+	tbar_rbar_open.onclick=function() {
+		if (rbar.className.indexOf("show") > -1){//hide
+			rbar.className = rbar.className.replace("show","");
+			bodyRemoveClass("nav_modal");
+		} else{//show
+			rbar.classList.add("show");
+			bodyAddClass("nav_modal");
+		}
+
+		return false;
+	}
+}
+
+loadMobileLbar();
+
+/* attach listener to for rbar events AFTER page loads (because #rbar hasn't loaded at this point in page ) */
+if(window.addEventListener){
+	window.addEventListener('load', loadMobileRbar)
+} else{
+	window.attachEvent('onload', loadMobileRbar)
+}
+</script>
+
+
+
+<div id="content">
+		<div class="center" style="margin-top:16px;height:100px"><div id="nn_lb1"></div><div id="nn_mobile_lb1"></div></div>
+<main>
+
+
+<div class="post">
+<h2><a href="/news/2022/12-August-2022.shtml" id="12-August-2022">Friday: Pokémon Sword & Shield - Raid Event + Online Competition + Pokémon Café ReMix - Zorua Event + Pokémon Masters EX - Battle Event</a></h2><p class="info"><span class="date">12-08-2022 01:00 BST / 20:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 14:04 BST<br />Edit @ 07:00: Pokémon Café ReMix & Masters | Edit @ 11:22: Dracovish | Edit @ 11:44: Episode Details | Edit @ 14:00: Victini Distribution | Edit @ 14:04: Sinistea Distribution</p>
+
+
+
+<div class="pics"><a href="/swordshield/serialcode.shtml"><img src="/swordshield/dracovishevent.jpg" alt="Pokémon Sword & Shield - Gift" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield - Ash's Dracovish Distribution</p>
+<p>A code was given during the Pokémon anime episode today in Japan. This code allows for all players to receive a Dracovish based on the Dracovish Ash uses in the anime, and runs until Thursday August 25th 2022 so get it while you can. The code is <b>GANJ0UAG0882</b>. Our <a href="/events">Event Database</a> has been updated with the details of this event</p></div>
+
+
+<div class="pics"><a href="/swordshield/serialcode.shtml"><img src="/swordshield/victinievent.jpg" alt="Pokémon Sword & Shield - Gift" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield - Victini Distribution</p>
+<p>It has been confirmed that a special Victini will be distributed during the live stream for the Pokémon World Championships next week. The Victini holds a Starf Berry and has the moves V-Create, Work Up, Zen Headbutt and Flame Charge. Our <a href="/events">Event Database</a> has been updated with the details of this event</p></div>
+
+<div class="pics"><a href="/swordshield/"><img src="/swordshield/sinisteaevent.jpg" alt="Pokémon Sword & Shield - Gift" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield - Sinistea Distribution</p>
+<p>It has been confirmed that a special Sinistea is to be distributed to players in Pokémon Sword & Shield if they are attending the Pokémon World Championships in London, UK next week from August 18th through August 21st. This Sinistea holds a MooMoo Milk and has the special move Celebrate, Memento, Metronome and Aromatherapy. Our <a href="/events">Event Database</a> has been updated with the details of this event</p></div>
+
+
+<div class="pics"><a href="/swordshield/maxraidbattles/eventden-grimmsnarlevent.shtml"><img src="/swordshield/grimmsnarlraids.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>The Wild Area Event has now shifted in Pokémon Sword & Shield for a new Extra Event. With this, for the next few days, the Impidimp line will be available, with Shiny Grimmsnarl also being available. It runs until August 21st at 23:59 UTC. We're currently compiling all details of the event so be sure to keep checking back. <br />
+Edit @ 01:13: We have updated our section with full details of this <a href="/swordshield/maxraidbattles/eventden-grimmsnarlevent.shtml">Max Raid Battle Event</a>, as well as updated our <a href="/itemdex">ItemDex</a> for TR locations.
+</p></div>
+
+
+
+<div class="pics"><a href="/swordshield/onlinecompetitions/ichoose'chu.shtml"><img src="/swordshield/onlinecompetitions/ichoose'chu.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>Battles for the next online competition have begun. This competition, the I Choose 'Chu is a Single Battle competition that only allows for you to use Pichu, Pikachu, Raichu or Alolan Raichu. All players who enter get 50 BP<br />
+Battles run from August 12th 00:00 UTC to  August 14th 23:59 UTC.<br />
+We have full details of this competition, including an eligible Pokémon list, in our <a href="/swordshield/onlinecompetitions/ichoose'chu.shtml">I Choose 'Chu</a> section</p></div>
+
+<div class="pics"><a href="/pokemonmasters/events/looker'stenacity.shtml"><img src="/pokemonmasters/events/looker'stenacity.jpg" alt="Pokémon Masters - Looker's Tenacity" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX - Villain  Event</p>
+<p>The Looker's Tenacity Extreme Battle Event has begun in Pokémon Masters EX. This event is features strong battles against Looker. It runs until August 28th.<br /><br />We're currently compiling all details in our <a href="/pokemonmasters/events/looker'stenacity.shtml">Looker's Tenacity</a> event section</p></div>
+
+<div class="pics"><a href="/cafemix/events/timidhisuianzorua.shtml"><img src="/cafemix/timidhisuianzorua.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>The Pokémon Café ReMix Hisuian Zorua Team Event has begun. This event has players collect points by playing various stages in order to recruit <a href="/cafemix/pokemon/zorua-hisuianform.shtml">Hisuian Zorua</a>. This runs until August 22nd</p></div>
+
+<div class="pics"><a href="/anime/epiguide/pokemon/1210.shtml"><img src="/1210.jpg" alt="The Climax Begins: Ash's Masters Tournament Experience!" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon 2019 .</p>
+<p>The latest episode has aired in Japan today. This episode features a recap of the Masters Tournament. The <a href="/anime/dex"><u>AniméDex</u></a> has been updated with the contents of this <a href="/anime/epiguide/pokemon/1210.shtml"><u>episode</u></a>. Click the picture to go to the section but be warned however as it contains spoilers.</p></div>
+
+ </div>
+<!-- end_news -->
+
+
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/11-August-2022.shtml" id="11-August-2022">Thursday: Pokémon GO - Worlds Event + Pokémon UNITE - Holowear</a></h2><p class="info"><span class="date">11-08-2022 06:00 BST / 01:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 21:00 BST<br />Edit @ 21:00: Pokémon GO Event</p>
+
+<div class="pics"><a href="/pokemongo/events/2022pokemonworldchampionshipscelebrationevent.shtml"><img src="/pokemongo/worlds2022event.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the next Pokémon GO event. This event is the Pokémon World Championships event and is due to run from August 18th at 10:00 to August 23rd at 20:00 local time and introduces Worlds Pikachu into the game<br />
+There will be Celebratory T-Shirts. One available through the Twitch stream and another through the GO Booth PokéStop<br />
+There will be challengers at PokéStops with teams based on teams used by Regional Championships winners<br />
+There will be Timed Research that gives Worlds Pikachu, an Elite Fast TM and an Elite Charged TM<br />
+Nidoran, Mankey, Machop, Mudkip, Sableye, Meditite, Swablu, Spheal, Croagunk, Dewpider, Scraggy and Galarian Stunfisk will be in the wild<br />
+Pikachu, Galarian Farfetch'd, Marill, Barboach, Timburr, Scraggy will be in 1 Star Raids<br />
+Primeape, Lickitung and Skarmory in 3 Star Raids<br />
+Zacian & Zamazenta in 5 Star Raids<br />
+There will be Field Research to get Bulbasaur, Gastly, Rhyhorn, Magikarp, Chikorita, Mudkip, Galarian Zigzagoon, Beldum, Galarian Stunfisk and Fletchling<br /><br>
+Rhyperior obtain in the event will have Rock Wrecker<br />
+Gengar evolved in the event will have Shadow Punch<br />
+Gyarados evolved in the event will have Aqua Tail<br />
+Metagross evolved in the event will have Meteor Mash<br />
+Talonflame evolved in the event will have Incinerate
+</p></div>
+
+
+<div class="pics"><a href="/pokemonunite/holowear.shtml"><img src="/pokemonunite/rocknrolltrevenant.jpg" alt="Pokémon UNITE" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>Two new pieces of <a href="/pokemonunite/holowear.shtml">Holowear</a> have been released for Pokémon UNITE. This is the Rock 'n' Roll Style outfit for <a href="/pokemonunite/pokemon/trevenant.shtml">Trevenant</a> which costs 2199 Gems and is a <a href="/pokemonunite/premiumholowear.shtml">Premium Holowear</a>, so Phantump also has an outfit. The game also added the Tuxedo Style Holowear for <a href="/pokemonunite/pokemon/delphox.shtml">Delphox</a> which costs 1050 Gems</p></div>
+
+
+
+ </div>
+<!-- end_news -->
+
+
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/10-August-2022.shtml" id="10-August-2022">Wednesday: Pokémon Masters EX - Villain Event + Pokémon Café ReMix - New Orders + Pokémon GO - Bug Out Event</a></h2><p class="info"><span class="date">10-08-2022 07:00 BST / 02:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 17:10 BST<br />Edit @ 17:10: Pokémon Center Registration</p>
+
+
+<div class="pics"><a href="/playpokemon/2022/worldchampionships.shtml"><img src="/playpokemon/2022/worldspokemoncenter.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon World Championships</p>
+<p>The Pokémon Company International have opened <a href="https://worlds.pokemon.com/en-us/news/Pokemon_Center_Pop-Up_at_the_Pokemon_World_Championships_FAQ/" target="blank" rel="nofollow">early registration</a> for the Pokémon Center at the Pokémon World Championships. This is done through booking an early slot, though there will be a virtual queue at the event if you do not get a slot. The Pokémon Center only accepts Credit or Debit/Cash cards and does not accept physical cash.<br />
+Its opening times are:<br />
+Wednesday 17th August: 12 pm to 7 pm<br />
+Thursday 18th – Saturday 20th August: 8 am to 8 pm<br />
+Sunday 21st August: 8 am to 4 pm</p></div>
+
+
+
+ <div class="pics"><a href="/pokemongo/events/bugout2022.shtml"><img src="/pokemongo/bugout2022.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Bug Out  Event is now rolling out globally. This event runs from 10:00 local time until 20:00 local time on August 16th and features the addition of Grubbin and Shiny Venipede into the game<br />
+We are currently compiling details of the event, including the Timed Research in our <a href="/pokemongo/events/bugout2022.shtml">Bug Out event  section</a></p></div>
+
+<div class="pics"><a href="/pokemonmasters/events/teamaqua'sstormyseas.shtml"><img src="/pokemonmasters/events/teamaqua'sstormyseas.jpg" alt="Pokémon Masters - Team Rocket Attacks" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX - Villain  Event</p>
+<p>The Team Aqua's Stormy Seas Villain  Event has begun in Pokémon Masters EX. This event is the third Villain event and ties in with the new story arc. It runs until August 28th.<br />A new Poké Fair Scout is now available to get the Sync Pair of <a href="/pokemonmasters/syncpairs/steven.shtml">Steven & Deoxys</a>. The scout runs until August 28th<br />We're currently compiling all details in our <a href="/pokemonmasters/events/teamaqua'sstormyseas.shtml">Team Aqua's Stormy Seas</a> event section</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/villainarc.shtml"><img src="/pokemonmasters/hoennstory2.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>A new Chapter <a href="/pokemonmasters/mainstory.shtml">Main Story</a> has begun. This is the start of the fifth chapter second arc, known as the Villain Arc, and this chapter focuses upon Team Magma and Team Aqua</p></div>
+
+
+<div class="pics"><a href="/cafemix/mainorders.shtml"><img src="/cafemix/neworders.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>New orders have been added to Pokémon Café ReMix. This adds stages 1351-1375 to the game We're currently cataloguing all these new stages and details so be sure to keep checking back. <br />
+
+Edit @ 08:18: We have updated the <a href="/cafemix/mainorders.shtml">Main Orders</a> with the contents of today's update. The next batch of Orders will be released on August 17th 2022<br />
+
+</p></div>
+
+ </div>
+<!-- end_news -->
+
+
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/09-August-2022.shtml" id="09-August-2022">Tuesday: Pokémon World Championships - Exclusive Merchandise Reveal + Pokémon GO Fest 2022 Finale - Event Details</a></h2><p class="info"><span class="date">09-08-2022 06:00 BST / 01:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 21:53 BST<br />Edit @ 14:00: Pokémon GO Fest Finale | Edit @ 15:08: The Arceus Chronicles | Edit @ 21:00: Pokémon GO | Edit @ 21:53: TCG Exhibition</p>
+
+
+<div class="pics"><a href="/playpokemon/2022/worldchampionships.shtml"><img src="/worlds2022motif.jpg" alt="Pokémon World Championships " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon World Championships - Exclusive Merchandise Reveal</p>
+<p>The Pokémon Company International has given us the global exclusive reveal of a pair of merchandise that can be exclusively purchased at the Pokémon Center Pop-up Store at the <a href="/playpokemon/2022/worldchampionships.shtml">Pokémon World Championships</a> next week from August 17th through 21st in the ExCeL in London, United Kingdom.<br />
+This merchandise is the much coveted Coin, Damage Counters & VSTAR Marker Set, with two variations being available in the store. The Coin, Damage Counters & VSTAR Marker Set  - Main Look (London WC22) and the Coin, Damage Counters & VSTAR Marker Set  - City (London WC22) which offer a different case and different coins with a different look<br />
+The opening time of Pokémon Center are as follows, with entry being through a virtual queue system at the venue<br />
+Wednesday 17th August: 12 pm to 7 pm<br />
+Thursday 18th – Saturday 20th August: 8 am to 8 pm<br />
+Sunday 21st August: 8 am to 4 pm
+<table align="center" class="dextab">
+<tr > 
+<td class="fooevo">Coin, Damage Counters & VSTAR Marker Set  - Main Look<br />Case</td><td class="fooevo">Coin, Damage Counters & VSTAR Marker Set  - Main Look<br />Dice & Coin</td></tr>
+<tr>
+<td class="cen"><a href="/playpokemon/2022/coinsetmain.jpg" rel="lightbox[ranger3]"><img src="/playpokemon/2022/coinsetmainth.jpg" width="250" loading="lazy" /></a></td><td class="cen"><a href="/playpokemon/2022/coinsetmain2.jpg" rel="lightbox[ranger3]"><img src="/playpokemon/2022/coinsetmain2th.jpg" height="250" loading="lazy" /></a></td>
+</tr>
+<tr > 
+<td class="fooevo">Coin, Damage Counters & VSTAR Marker Set  - City<br />Case</td><td class="fooevo">Coin, Damage Counters & VSTAR Marker Set  - City<br />Dice & Coin</td></tr>
+<tr>
+<td class="cen"><a href="/playpokemon/2022/coinsetcity.jpg" rel="lightbox[ranger3]"><img src="/playpokemon/2022/coinsetcityth.jpg" width="250" loading="lazy" /></a></td><td class="cen"><a href="/playpokemon/2022/coinsetcity2.jpg" rel="lightbox[ranger3]"><img src="/playpokemon/2022/coinsetcity2th.jpg" height="250" loading="lazy" /></a></td>
+</tr>
+</table>
+
+</p></div>
+
+
+
+<div class="pics"><a href="/anime/epiguide/pokemon/"><img src="/arceuschronicles.jpg" width="300"  alt="Pokémon The Arceus Chronicles" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The AnimeDepartment</h3>
+<p class="title">Pokémon Arceus Chronicles</p>
+<p>The Pokémon Company International have announced Pokémon The Arceus Chronicles, a special focused around Arceus and Team Galactic. This special will air at the Pokémon World Championships next week at a special screening on August 19th at 18:00, and will then be on Netflix from September 23rd<br />
+This special aired in four parts in Japan on Amazon Prime back in January
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/rHimPkAq5V8" frameborder="0" allowfullscreen></iframe></td></tr>
+</table></p></div>
+
+ <div class="pics"><a href="/card"><img src="/tcgexhibition2.jpg" width="300"  alt="Pokémon Trading Card Game: Online Illustration Exhibition" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The TCG Department</h3>
+<p class="title"> Pokémon Trading Card Game: Online Illustration Exhibition</p>
+<p>Following its announcement last month, the <a href="https://lp.anique.jp/exhibition/pokemon-card/en" target="blank" rel="nofollow">Pokémon Trading Card Game: Online Illustration Exhibition</a> is now online. This will run from August 10th through to October 22nd and allows for people to look at a variety of Pokémon Card artwork amongst three themes Life, History, and Artist showcasing artwork from over 50 different Pokémon TCG artists.</p></div>
+
+
+
+
+<div class="pics"><a href="/pokemongo/ticketevents/pokemongofest2022finale.shtml"><img src="/pokemongo/gofest2022finale.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the details for <a href="/pokemongo/ticketevents/pokemongofest2022finale.shtml">Pokémon GO Fest 2022 Finale</a> on August 27th 2022. First there is a free feature which includes a Special Research as well as Munna Snapshots with Shiny Munna being available and outfits based on Nihilego, Buzzwole and GO Recon Squad<br />
+There will be four habitats throughout the event in two hour blocks<br />
+Pheromosa - 10am to 12pm - Pikachu, Scyther, Pinsir, Sudowoodo, Hitmontop, Meditite, Anorith, Kricketot, Woobat, Karrablast<br />
+Buzzwole - 12pm to 2pm - Pikachu, Machop, Geodude, Hitmonlee, Hitmonchan, Magmar, Numel, Cranidos, Driblur, Axew<br />
+Xurkitree - 2pm to 4pm - Pikachu, Electabuzz, Electrike, Shinx, Lileep, Burmy, Combee, Foongus, Joltik, Shelmet, Stunfisk<br />
+Nihilego - 4pm to 6pm - Pikachu, Bulbasaur, Clefairy, Tentacool, Chansey, Tangela, Omanyte, Chikorita, Turtwig, Burmy, Munna, Frillish, Swirlix, Skrelp<br />
+Pikachu, Axew and Rockruff will be in 1 Star Raids<br />
+SNnorlax, Salamence, Druddigon, Dartrix, Torracat and Brionne will be in 3 Star Raids<br />
+The respective Ultra Beasts will be in 5 Star Raids during their respective hours<br />
+The Ticketed experience will be available for all who had the GO Fest ticket, or costs $10.99 for those who didn't. It will include more bonuses including 5 Snapshots, 5000XP more in Raids, Unown X and N now being Shiny<br />3* Experience spinning PokéStops, 50% Hatch Distance, and the ability to change Shaymin's forms<br />
+A Special Research will be available for ticketed players with avatar items including a helmet and a Shaymin shirt. There will be new Special Research in every two hour slot for ticketed players<br />
+Unown B, G, N, O, P, S and X will be available in Incense<br />
+In Pheromosa Biome, Galarian Mr. Mime and Pansage will spawn in Incense<br />
+In Buzzwole Biome, Torkoal & Pansear will spawn in Incense<br />
+In Xurkitree Biome, Klink will spawn in Incense<br />
+In Nihilego Biome, Tropius, Panpour and Frillish will spawn in Incense<br />
+
+</p></div>
+
+
+ <div class="pics"><a href="/pokemongo/events/bugout2022.shtml"><img src="/pokemongo/bugout2022.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Bug Out  Event is now rolling out in Asia Pacific regions. This event runs from 10:00 local time until 20:00 local time on August 16th and features the addition of Grubbin and Shiny Venipede into the game<br />
+We are currently compiling details of the event, including the Timed Research in our <a href="/pokemongo/events/bugout2022.shtml">Bug Out event  section</a></p></div>
+
+
+
+ </div>
+<!-- end_news -->
+
+
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/08-August-2022.shtml" id="08-August-2022">Monday: Pokémon TCG - Lost Origin + Pokémon Masters EX - Hoenn Event + Pokémon Café ReMix - August Events</a></h2><p class="info"><span class="date">08-08-2022 05:02 BST / 00:02 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 14:35 BST<br />Edit @ 07:00: Egg Event | Edit @ 08:01: Pokémon Café ReMix | Edit @ 10:31: Safari Zone | Edit @ 14:35: Pokémon TCG Lost Origin</p>
+
+
+<div class="pics"><a href="/card/lostorigin/"><img src="/card/lostorigin.jpg" alt="Pokémon Masters - Clemont" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The TCG Department</h3>
+<p class="title">Pokémon Trading Card Game</p>
+<p>The Pokémon Company International have been kind enough to offer us the exclusive official reveal of one of the cards in the upcoming set, Lost Origin. This set is due out on September 9th and includes a small 30 card subset, the Trainer Galleryt. We can exclusively reveal the Hisuian Zoroark V card, one of the focal points of this set, with their official description<br /><br />
+<b>Hisuian Zoroark V</b>:  A ghostly figure stalks the snow, waiting to strike! Hisuian Zoroark V joins the Pokémon TCG for the first time. Its Void Return attack allows it to return to the Bench or unleash Shadow Cyclone to move an Energyto another Pokémon and do 130 damage!<br /><br />
+We've added these cards to our section and will continue to add the card listings over the next couple of weeks when pre-release products are out so be sure to keep checking back
+<table align="center" class="dextab">
+<tr > 
+<td class="fooevo">Hisuian Zoroark V </td></tr>
+<tr>
+<td class="cen"><a href="/card/lostorigin/146.shtml" rel="lightbox[ranger3]"><img src="/card/lostorigin/146th.jpg" height="200" loading="lazy" /></a></td>
+</tr>
+</table></p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/stevendeoxys.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>Pokémon Masters EX has announced the next event. This event is end of the Hoenn Villain Arc and introduces the Sync Pairs of Steven & Deoxys into the game. It runs from August 10th2022<br />
+Edit @ 07:03: The game has updated and we have updated our database with details of the new sync pairs of <a href="/pokemonmasters/syncpairs/steven.shtml">Steven & Deoxys</a> and <a href="/pokemonmasters/syncpairs/giovanni.shtml">Giovanni & Persian</a>
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/6UP3q2HWeNc" frameborder="0" allowfullscreen></iframe></td></tr>
+</table></p></div>
+
+<div class="pics"><a href="/pokemonmasters/events/fireandground-typeeggevent.shtml"><img src="/pokemonmasters/events/fireandground-typeeggevent.jpg" alt="Pokémon Masters - Egg Event" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>The next Egg Event is live Pokémon Masters EX. This event allows for players to get eggs of various Fire or Ground-type Pokémon to make Sync Pairs. You can get the Sync Pairs of <a href="/pokemonmasters/syncpairs/maincharacter.shtml">Main Character & Magby, Growlithe, Cubone, Vulpix and Sandsherew</a> with Shiny varaints of Magby, Growlithe & Cubone being available. We have full details in our <a href="/pokemonmasters/events/fireandground-typeeggevent.shtml">Flying and Psychic-type Egg Event</a> secton<br />
+Alongside this, a new <a href="/pokemonmasters/events/blissfulbonanzaaugust2022.shtml">Blissful Bonanza</a> has begun, and runs for a week until August 15th 2022</p></div>
+
+
+<div class="pics"><a href="/cafemix/events.shtml"><img src="/cafemix/hisuianzorua.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>Pokémon Café ReMix has announced the coming events in August. These events add two new Pokémon to the game<br />
+Hisuian Zorua will be available from August 12th in a Team Event<br />
+Jolteon will be available from August 22nd as part of a Point Event</p></div>
+
+<div class="pics"><a href="/pokemongo/reallifeevents.shtml"><img src="/pokemongo/safarizonegoyang.jpg" alt="Pokémon GO" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO Safari Zone</p>
+<p>A new Pokémon GO Safari Zone event has been announced. This event will run from September 23rd through September 25th in Goyang, South Korea. It is the first Safari Zone to be held in the country. Currently no further details have been announced</p></div>
+
+ </div>
+<!-- end_news -->
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/07-August-2022.shtml" id="07-August-2022">Sunday: Pokémon GO - Bug Out Ultra Unlock + Pokémon&nbsp;of the Week</a></h2><p class="info"><span class="date">07-08-2022 13:00 BST / 08:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 21:00 BST<br />Edit @ 21:00: Pokémon GO</p>
+
+<div class="pics"><a href="/pokemongo/events/bugout2022.shtml"><img src="/pokemongo/bugout2022.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the Ultra Unlocks for the Bug Out  event that runs from August 10th at 10:00 to August 16th at 20:00<br />
+Unown T will be available in Raid Battles during the event<br />
+Pansage is in the wild and in Raid Battles<br />
+There will be Timed Research which  will offer items, encounters and Scizor Mega Energy<br />
+You will get more Candy and an increased chance of receiving Candy XL for catching Pokémon with Nice, Great or Excellent throws <br />
+There is also to be an Ultra Unlock bonus for Galarian Zigzagoon Community Day, which runs 11am to 2pm on August 13th. It will give 2* Catch Experience and 2* Catch Candy, as well as an additional 2 Special Trades in the event time. Trade cost will also be reduced by 75% for the duration of the event</p></div>
+
+
+
+ <div class="pics"><a href="/potw-swsh/869.shtml"><img src="/potw-swsh/869-i.jpg" alt="Pokémon of the Week - Alcremie" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Pokémon of the Week Department</h3>
+<p class="title">Who's That Pokémon</p>
+<p>Today marks the one-hundred & fourty-second entry into the Generation VIII competitive field with a Galar Pokémon. These entries are created by the visitors for the visitors and then compiled by our writers Psynergy, Jellal, Mestorn, Aminith & Mcdanger. To get involved, <a href="https://forums.serebii.net/forums/potw-collaboration.210/" target="blank"><u><b>Click here for the discussion forum</b></u></a> <br />Today, we are covering a Pokémon introduced in the eighth generation. When it trusts a Trainer, it will treat them to berries it's decorated with cream. When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer. The moment it evolved, it took on a complex flavor. This is because of the way its cells spontaneously shifted during evolution. The cells that compose its cream fluctuated suddenly during evolution, giving the cream a complex flavor.. So, here it is, the one-hundred & fourty-second  entry, Alcremie</p></div>
+
+
+ </div>
+<!-- end_news -->
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/06-August-2022.shtml" id="06-August-2022">Saturday: Pokémon TCG - Scarlet & Violet Worlds Reveal + Pokémon Masters EX - Egg Event</a></h2><p class="info"><span class="date">06-08-2022 09:04 BST / 04:04 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 12:06 BST<br />Edit @ 12:06: Scarlet & Violet TCG</p>
+
+
+<div class="pics"><a href="/playpokemon/2022/worldchampionships.shtml"><img src="/worlds2022motif.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The TCG Department</h3>
+<p class="title">Pokémon Scarlet & Violet TCG Reveal</p>
+<p>The Pokémon World Championships website has been updated and, within it, it has been confirmed that the first cards from the Pokémon Scarlet & Violet TCG sets will be given a sneak peek at the event. At present it's not clear when and how but we'll provide details as they come<br />
+It has also been confirmed that, at the event, there will be a gallery featuring entries from the recent Pokémon TCG Illustration Contest</p></div>
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/events/fireandground-typeeggevent.jpg" alt="Pokémon Masters - Egg Event" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>The next Egg Event has been officially announced for Pokémon Masters EX. This event runs from August 8th and allows for players to get eggs of various Fire or Ground-type Pokémon to make Sync Pairs. You can get the Sync Pairs of <a href="/pokemonmasters/syncpairs/maincharacter.shtml">Main Character & Magby, Growlite, Vulpix, Cubone and Sandshrew</a> with Shiny varaints of Magby  being available</p></div>
+
+ </div>
+<!-- end_news -->
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/05-August-2022.shtml" id="05-August-2022">Friday: Pokémon Sword & Shield - Ash's Team Distribution + Pokémon GO Fest Sapporo + Pokémon Masters EX - Courtney Scout + Pokémon (2019) - Episode Details</a></h2><p class="info"><span class="date">05-08-2022 01:00 BST / 20:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 16:11 BST<br />Edit @ 06:03: Ash's Team distribution | Edit @ 07:00: Pokémon Masters EX | Edit @ 11:35: Episode Details | Edit @ 16:11: PokéToon</p>
+
+
+<div class="pics"><a href="/swordshield/serialcode.shtml"><img src="/swordshield/ashpokegift.jpg" alt="Pokémon Scarlet & Violet" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>It has been announced that, in addition to the distribution of World Cap Pikachu for the movie from August 11th, each week alongside the anime episodes in Japan from August 12th through September 16th, special serial codes will air alongside. These codes will provide each of Ash's Pokémon from the Masters Tournament to Sword & Shield<br />
+Dracovish - August 12th<br />
+Dragonite - August 26th<br />
+Gengar - September 2nd<br />
+Sirfetch'd - September 9th<br />
+Lucario - September 16th<br />
+They all are Level 80. Our <a href="/events/">Event Database</a> has been updated with details of this event</p></div>
+
+<div class="pics"><a href="/pokemonmasters/events/teamhoennuniteaugust2022.shtml"><img src="/pokemonmasters/courtney.jpg" alt="Pokémon Masters - Team Hoenn Unite " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX - Solo Event</p>
+<p>A new Spotlight Scout is now available in Pokémon Masters EX. This Spotlight Scout allows for players to get the Sync Pair of <a href="/pokemonmasters/syncpairs/courtney.shtml">Courtney & Camerupt</a>. The scout runs until August 28th</p></div>
+
+
+ <div class="pics"><a href="/pokemongo/reallifeevents/pokemongofest2022sapporo.shtml"><img src="/pokemongo/gofest2022sapporo.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p> Pokémon GO Fest 2022 Sapporo is starting today. This event runs all weekend and features the addition of Xurkitree for players in Sapporo, alongside new Special Research, Shiny Swirlix & Pansage and more.<br />
+In addition to this, a <a href="/pokemongo/events/gofest2022sapporotie-in.shtml">global tie-in event</a> is happening globally until 20:00 UTC on August 7th featuring a Collection Challenge and spawns of Pokémon from GO Fest 2022 Sapporo<br />
+ The event has begun. We are adding details in our <a href="/pokemongo/reallifeevents/pokemongofest2022sapporo.shtml">Pokémon GO Fest 2022 Sapporo event  section</a><br />
+</p></div>
+
+<div class="pics"><a href="/anime/epiguide/pokemon/1209.shtml"><img src="/1209.jpg" alt="The Possibilities are Endless for Chloe and Eevee!" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon 2019 .</p>
+<p>The latest episode has aired in Japan today. This episode features Chloe go camping with Professor Cerise to try and figure out what to do about Eevee's evolution. The <a href="/anime/dex"><u>AniméDex</u></a> has been updated with the contents of this <a href="/anime/epiguide/pokemon/1208.shtml"><u>episode</u></a>. Click the picture to go to the section but be warned however as it contains spoilers.</p></div>
+
+<div class="pics"><a href="/anime/poketoon/"><img src="/anime/poketoon/jigglypuffssong.jpg" alt="Jigglypuff's Song " width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >PokéToon.</p>
+<p>The final episode of PokéToon is now available on the Pokémon TV app. This episode, Jigglypuff's Song follows the story of a Jigglypuff whose song is different to the songs of other Jigglypuff. </p></div>
+
+
+
+ </div>
+<!-- end_news -->
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/04-August-2022.shtml" id="04-August-2022">Thursday: Pokémon Scarlet & Violet + Pokémon UNITE - Buzzwole & Pika Party</a></h2><p class="info"><span class="date">04-08-2022 01:00 BST / 20:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p><b>Be sure to check back later today for huge Scarlet & Violet news. </b>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 20:04 BST<br />Edit @ 07:28: Movie Distributions | Edit @ 12:13: Episode Title | Edit @ 17:27: Pokémon World Championships | Edit @ 20:04: Pokémno GO Fest</p>
+
+<div class="pics"><a href="/scarletviolet"><img src="/scarletviolet/svterastal.jpg" alt="Pokémon Scarlet & Violet" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Scarlet & Violet</p>
+<p>In case you missed it, new Pokémon Scarlet & Violet news has dropped including <a href="/scarletviolet/pokemon.shtml">New Pokémon: Fidough & Cetitan</a> as well as <a href="/scarletviolet/paldeanforms.shtml">Paldean Forms</a> and the new battle mechanics <a href="/scarletviolet/terastal.shtml">Terastal</a> and new <a href="/scarletviolet/teraraidbattles.shtml">Tera Raid Battles</a>, among more. Be sure to check our section and the previous update for more details<br />
+Edit @ 07:53: As requested, created a page on <a href="/scarletviolet/serialcode.shtml">Serial Code Distributions</a> including various pre-order bonuses</p></div>
+
+<div class="pics"><a href="/swordshield/serialcode.shtml"><img src="/movie22gifts.jpg" alt="Pokémon Scarlet & Violet" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>Details have been released for the special movie distributions coming to Japan from next week. These distributions are obtained by Serial Code when you go and see the anniversary showings of the movies. The details are as follows<br />
+Latias - Lv. 70 - Mist Ball, Dragon Pulse, Dive, Sweet Kiss. Holds the Soul Dew. Runs from August 11th<br />
+Jirachi - Lv. 70 - Meteor Mash, Psychic, Rest, Wish. Holds a Comet Shard. Runs from August 19th<br />
+Dialga - Lv. 70 - Roar of Time, Flash Cannon, Metal Burst, Overheat. Holds an Adamant Orb Runs from August 26th (Shield)<br />
+Palkia - Lv. 70 - Spacial Rend, Hydro Pump, Metal Burst, Overheat. Holds a Lustrous Orb Runs from August 26th (Sword)<br />
+World Cap Pikachu - Lv. 80 - Thunderbolt Holds a Light Ball. Runs from August 11th<br />
+We have added full details to our <a href="/events">Event Database</a>
+</p></div>
+
+<div class="pics"><a href="/playpokemon/2022/worldchampionships.shtml"><img src="/worlds2022motif.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon World Championships</p>
+<p>The venue for the Pokémon World Championships has revealed some new details for the Pokémon World Championships. They have announced an outdoor area called Pokémon Worlds Square which is open 11am to 8pm on Thursday, Friday and Saturday outside the ExCel. in this area, you can meet Pikachu and Eevee, get your face painted, make your own Pokémon card and more. Most notably, on Friday August 19th at 18:30, there will be a special world premiere of "Pokémon: The Arceus Chronicles" at Worlds Square. Entry to Worlds Square is first come, first served</p></div>
+
+ <div class="pics"><a href="/pokemongo/events/gofest2022sapporotie-in.shtml"><img src="/pokemongo/gofest2022sapporo.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Fest 2022 Sapporo Tie-In event is starting to roll out. This event runs from 08:00 local time on the 5th through to 20;00 local time on the 7th and features increased spawns of certain Pokémon that would spawn in GO Fest 2022 tomorrow, as well as a Collection Challenge. We've added full details into our <a href="/pokemongo/events/gofest2022sapporotie-in.shtml">GO Fest 2022 Sapporo Tie-In event section</a></p></div>
+
+<div class="pics"><a href="/pokemonunite/"><img src="/pokemonunite/buzzwole.jpg" alt="Pokémon UNITE" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>Pokémon UNITE has received a small update which adds a variety of things to the game.<br />
+First, the Pokémon <a href="/pokemonunite/pokemon/buzzwole.shtml">Buzzwole</a> is now available to purchase in the in-game store. We're currently compiling full details for Buzzwole in our Pokémon section for the game. Some new <a href="/pokemonunite/holowear.shtml">Holowear</a> has been made available as well. The Tuxedo style  for Cinderace is available in the shop, alongside the Tuxedo Style for Buzzwole</p></div>
+
+
+<div class="pics"><a href="/pokemonunite/events/pikaparty.shtml"><img src="/pokemonunite/pikaparty2.jpg" alt="Pokémon UNITE" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>The special Pika Party event is now live in Pokémon UNITE. This event runs a spceial Quick Battle Mode where all players can only use Pikachu, and all the opponents have been replaced by Pikachu as well, including Surfing and Gigantamax Pikachu. This event and mode run until September 1st at 23:59 UTC</p></div>
+
+
+<div class="pics"><a href="/anime/epiguide/pokemon"><img src="/anime2019.jpg" width="300" alt="Pokémon 2019" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title">Pokémon Journeys - News</p>
+<p>A new Episode Title has  been released via Japanese TV Guides. This episodes is due to air on September 9th or September 16th<br />
+Episode 1212: The Semifinals III: Valor</p></div>
+
+
+
+
+ </div>
+<!-- end_news -->
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/03-August-2022.shtml" id="03-August-2022">Wednesday: Pokémon Presents + Pokémon Masters EX - Team Hoenn Unite + Pokémon Café ReMix - New Orders</a></h2><p class="info"><span class="date">03-08-2022 07:00 BST / 02:00 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p><b>Be sure to check back later today for huge Scarlet & Violet news. </b>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 21:00 BST<br />Edit @ 07:35: Sales Figures | Edit @ 10;47: Pokémon Presents | Edit @ 14:00: Pokémon Presents</p>
+
+<div class="pics"><a href="/scarletviolet"><img src="/scarletviolet/title.jpg" alt="Pokémon Scarlet & Violet" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Scarlet & Violet</p>
+<p>The latest news for Pokémon Scarlet & Violet has been released. We're currently compiling all details so keep checking back
+Three new Pokémon have been revealed: Paldean Wooper, Fidough and Cetitan<br />
+Fidough is a Fairy-type Pokémon<br />
+Paldean Wooper is a Poison/Ground-type Pokémon<br />
+Cetitan is an Ice-type Pokémon<br />
+The Terastal phenomenon lets Pokémon Terastallize that can provide a boost to its moves. Some even change forms based on there Tera Type such as Pikachu Flying-type, Eevee Water & Grass tpes and more
+Raid Battles make a return in Pokémon Scarlet & Violet with Tera Pokémon able to be found <br />
+A special Flying Tera Type Pikachu will be available for players through Mystery Gift before February 28th 2023<br />
+Edit @ 14:34: We have added dozens of screenshots to our <a href="/scarletviolet/pics.shtml">Pre-Release Screenshot Page</a><br />
+If you download on the eShop you will get a Serial Code of an Adventure set of items including Potion, Full Heal, Revive, Ether, Rare Candy and a Nugget. It is available for those who download before February 28th<br />
+Terastal can be used by each Pokémon and each Pokémon has a Tera Type which changes Pokémon. For example some Eevee will have Normal Tera Type while others will have Flying. You canTerastallize a Pokémon once per battle and it lasts until the end of the battle. If a Terastallized Pokémon uses a move matching its Tera Type and its original types, the move power is boosted<br />
+Edit: Created a page on <a href="/scarletviolet/paldeanforms.shtml">Paldean Forms</a><br />
+Updated the <a href="/scarletviolet/pokemon.shtml">New Pokémon page</a><br />
+Edit @ 14:58: Created a preliminary page on <a href="/scarletviolet/terastal.shtml">Terastal mechanic</a><br />
+Edit @ 15:06: Created a preliminary page on <a href="/scarletviolet/teraraidbattles.shtml">Tera Raid Battles</a><br />
+Edit @ 15:13: Updated the <a href="/scarletviolet/exclusives.shtml">Version Exclusive</a> section<br />
+Edit @ 15:16: Created a preliminary <a href="/scarletviolet/internetevents.shtml">Internet Events</a> page<br />
+Edit @ 15:26: Updated the <a href="/scarletviolet/paldeapokedex.shtml">Paldea Pokédex</a> section<br />
+Edit @ 15:39: Updated the <a href="/scarletviolet/characters.shtml">New Characters</a> section<br />
+Edit @ 15:42: Created a preliminary <a href="/scarletviolet/gyms.shtml">Gym Leader</a> page<br />
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/mZf-vIpVDLo" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+</p></div>
+
+<div class="pics"><a href="/pokemongo/events/bugout2022.shtml"><img src="/pokemongo/bugout2022.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the next Pokémon GO event. This event is the Bug Out event and is due to run from August 10th at 10:00 to August 16th at 20:00 local time and introduces various Grubbin and Mega Scizor into the game<br />
+A Collection Challenge will run to get a 15,000 XP and a Bug Catcher Pose<br />
+A special bonus will happen if three or more trainers join in an in-person raid battle, causing Bug-types to spawn in 300 metre radius: August 10th: Wurmple, 11th Caterpie, 12th Spinarak, 13th Venipede, 14th Kricketot, 15th Weedle, 16th Ledyba<br />
+There will be photobombs with Bug-types during the event<br />
+Shiny Venipede is available with this event<br />
+Caterpie, Weedle, Ledyba, Spinarak, Yanma, Pineco, Wurmple, Surskit, Kricketot, Skorupi, Venipede, Dwebble,  Karrablast, Joltik, Shelmet, Grubbin and Dewpider will be in the wild<br />
+Paras, Pineco and Joltik will be in 1 Star Raid Battles<br />
+Venomoth, Pinsir, Forretress and Shuckle will be in 3 Star Raid Battles<br />
+Caterpie, Weedle, Paras, Venonat, Ledyba, Spinarak, Yanma, Silcoon, Cascoon, Nincada, Volbeat, Illumise, Kricketot, Burmy, Combee, Sewaddle, Venipede, Dwebble, Karrablast, Shelmet, Grubbin, Dewpider and Wimpod will be in Field Research
+</p></div>
+
+<div class="pics"><a href="/pokemongo/events.shtml"><img src="/pokemongo/gofest2022sapporo.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the global tie-in for Pokémon GO Fest Sapporo this weekend. When it begins, there will be a Collection Challenge alongside spawns of Paras, Bellsprout, Hoppip, Sunkern, Cherrim and Cottonee. If players complete the Global Challenge during the event, an Ultra Unlock will come during the Bug Out event, and Zigzagoon Community Day event</p></div>
+
+
+<div class="pics"><a href="/pokemonunite"><img src="/pokemonunite/pikaparty.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Presents  </p>
+<p>During the Pokémon Presents, a new special event was announced for Pokémon UNITE. Starting tonight until September 1st, a special mode where only Pikachu can battle will be running. Pikachu will replace all the Pokémon in the wild, as well as being the only Pokémon you can play as, with Gigantamax Pikachu replacing Zapdos. Pikachu Holowear will be available in the store as well<br />
+Starting August 14th, special missions will be available to celebrate the Pokémon World Championships. A special gift code will be released during the live stream to get a special trainer apparel
+
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Presents</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/jJ2uXFP1064" frameborder="0" allowfullscreen></iframe></td></tr>
+</table> </p></div>
+
+
+<div class="pics"><a href="/presentations/pokemonpresents/august3rd2022.shtml"><img src="/presentations/pokemonpresents/presents030822.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Presents  </p>
+<p>Today marks the Pokémon Presents. This is a 14 minute presentation showcasing the latest news for Pokémon. This will air from 14:00 BST / 09:00 EDT / 06:00 PDT / 15:00 CEST / 22:00 JST, with an official Watch Party aired on the Japanese youtube channel an hour prior. We'll post full details of all reveals live as they happen so be sure to keep checking back<br />
+Edit: The Ultra Beasts will appear globally in the Pokémon GO Fest 2022: Finale event later this month
+A new mode is to come to Pokémon UNITE: Pika Party. Battles include only Pikachu. <br />
+ Pokémon Masters EX to add a Trainer Lodge mode later this month
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Presents</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/ojiBuA97rdc" frameborder="0" allowfullscreen></iframe></td></tr>
+</table> </p></div>
+
+
+
+<div class="pics"><a href="/pokemonmasters/events/teamhoennuniteaugust2022.shtml"><img src="/pokemonmasters/events/teamhoennuniteaugust2022.jpg" alt="Pokémon Masters - Team Hoenn Unite " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX - Solo Event</p>
+<p>The Team Hoenn Unite Villain  Event has begun in Pokémon Masters EX. This event is an event designed to earn vouchers to exchange for items. It runs until August 28th.<br />A new Spotlight Scout is now available to get the Sync Pair of <a href="/pokemonmasters/syncpairs/looker.shtml">looker & Croagunk</a>. The scout runs until August 28th<br />We're currently compiling all details in our <a href="/pokemonmasters/events/teamhoennuniteaugust2022.shtml">Team Hoenn Unite</a> event section</p></div>
+
+
+<div class="pics"><a href="/cafemix/events/mewtwo'sreturn.shtml"><img src="/cafemix/mewtwo'sreturn.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>The <a href="/cafemix/events/mewtwo'shunger.shtml">Mewtwo's return</a> One-Minute Cooking event has begun. This event has you earn Legendary Coins by completing the One Minute Cooking stages to then exchange in order to get the Pokémon <a href="/cafemix/pokemon/mewtwo.shtml">Mewtwo</a> and boost up its new Sidekick Bonus<br />
+Alongside this, a new <a href="/cafemix/delivery.shtml">Delivery Focus</a> has come which has added <a href="/cafemix/pokemon/latias.shtml">Latias</a> to the game</p></div>
+
+<div class="pics"><a href="/cafemix/mainorders.shtml"><img src="/cafemix/neworders.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>New orders have been added to Pokémon Café ReMix. This adds stages 1326-1350 to the game We're currently cataloguing all these new stages and details so be sure to keep checking back. <br />
+
+Edit @ 08:20: We have updated the <a href="/cafemix/mainorders.shtml">Main Orders</a> with the contents of today's update. The next batch of Orders will be released on August 10th 2022<br />
+
+</p></div>
+
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Sales Data</p>
+<p>Today is Nintendo's quarterly financial release and with it comes various sales data for the Pokémon Switch games. As of June 30th, the Pokémon game sales are as follows<br />
+
+<a href="/letsgopikachueevee/"><u>Pokémon Let's Go, Pikachu! & Let's Go, Eevee</u></a>: 14.66 million<br />
+<a href="/swordshield/"><u>Pokémon Sword & Shield</u></a>: 24.5 million<br />
+<a href="/brilliantdiamondshiningpearl/"><u>Pokémon Brilliant Diamond & Shining Pearl</u></a>: 14.79 million<br />
+</p></div>
+
+ </div>
+<!-- end_news -->
+
+
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/02-August-2022.shtml" id="02-August-2022">Tuesday: Pokémon GO - Partner Research</a></h2><p class="info"><span class="date">02-08-2022 07:06 BST / 02:06 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p><b>Be sure to check tomorrow's update for huge Scarlet & Violet news. </b>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 07:06 BST</p>
+
+<div class="pics"><a href="/pokemongo/todaysviewresearch/partnerresearch:softbank.shtml"><img src="/pokemongo/partnerresearch.jpg" alt="Pokémon GO" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO Safari Zone</p>
+<p>The latest Partner Research is now live in Pokémon GO in Japan. This Partner Research is accessed by players who get a ticket from the mobile provider Softbank and provides Timed Research to get a variety of items and encounters. It is available until August 31st 2022. We have full details in our <a href="/pokemongo/todaysviewresearch/partnerresearch:softbank.shtml">Partner Research</a> section</p></div>
+
+
+ </div>
+<!-- end_news -->
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/01-August-2022.shtml" id="01-August-2022">Monday: Pokémon Sword & Shield - Ranked Battle + Pokémon Masters EX - Champion Stadium + Pokémon Café ReMix - Monthly Goals</a></h2><p class="info"><span class="date">01-08-2022 06:23 BST / 01:23 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 21:00 BST<br />Edit @ 07:00: Pokémon Café ReMix & Masters EX | Edit @ 09:00: Pokémon Masters EX Hoenn Event | Edit @ 09;07: Pokémon GO | Edit @ 13:58: Pokémon Presents<br />Edit @ 18;10: Pokémon World Championships | Edit @ 21:00: Pokémon GO</p>
+
+
+<div class="pics"><a href="/presentations/pokemonpresents/"><img src="/presentations/pokemonpresents/presents030822.jpg" alt="Pokémon Presents" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Presents  </p>
+<p>A Pokémon Presents has been announced. This Pokémon Presents will air on August 3rdat 14:00 BST / 09:00 EDT / 06:00 PDT / 15:00 CEDT / 22:00 JST. It will showcase the latest Pokémon Scarlet & Violet news, as well as news on other Pokémon games and mobile apps<br />
+In addition to that, before the Presents, the Japanese channel will host a Pokémon Watch Party livestream at 21:00 JST. </p></div>
+
+
+<div class="pics"><a href="/swordshield/rankedbattle/series13.shtml"><img src="/swordshield/rankedbattle/series13.jpg" alt="Pokémon Sword & Shield - VGC Ruleset" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield - VGC Ruleset</p>
+<p>Ranked Battle Series 13 has been announced. This ruleset is the last in the Sword & Shield rulesets and runs from September 1st until November 1st. his ruleset expands on previous rulesets in that it allows Mythical Pokémon and has no limits with them and Restricted Legendary Pokémon so you can have a team full of them. All Pokémon must have a Galar symbol or the Battle Ready Symbol. </p></div>
+
+
+<div class="pics"><a href="/swordshield/rankedbattle/series12august.shtml"><img src="/swordshield/rankedbattle/series12.jpg" alt="Pokémon Sword & Shield - VGC Ruleset" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield - VGC Ruleset</p>
+<p>Ranked Battle Series 12/Season 33 is now live. This ruleset returns to the set of using 2 Restricted Pokémon and brings back Dynamax.  This season will run from August 1st at 04:00 UTC to August 31st at 23:59 UTC. Be sure to check out our section for full details and Pokémon restrictions.<br />
+With this, the thirty-second season of Pokémon Sword & Shield's Ranked Battle has come to an end and with it, the rewards for participation in battles is now live. To get them, you need to check your ranking in the Ranked Battle mode and then go to Mystery Gift > Receive via Battle Stadium. These rewards include BP and items range from Armorite Ore up to Bottle Caps depending upon your placement. </p></div>
+
+
+<div class="pics"><a href="/playpokemon/2022/worldchampionships.shtml"><img src="/worlds2022motif.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon World Championships</p>
+<p>Details have come out for the Pokémon World Championships livestreams, specifically the casters for the event<br />
+<b>MC</b>: Anna Prosser<br />
+<b>VGC</b>: Joe Brown, Rosemary Kelley, Lou Akcos-Cromie,Lee Provost, Sierra Hunter, Adam Dorricot,  Scott Glaza, Aaron Zheng, <br />
+<b>TCG</b>: Ross Gilbert, Kyle Sucevich, Shelbie Bou, Ethan Hegyi, Joe Bernard, Adam Watson<br />
+<b>GO</b>: Will Dunphey, Steven Sanders, Caleb Peng, Gabby Snyder<br />
+<b>UNITE</b>: JJ Mendoza Perez, Jake Sprague, Jeff Hoogland, Kirk Dubé, Joshua Hiebert<br />
+<b>Pokkén Tournament</b>: Russell Klein, Evan Hashimoto,  Alex Williams
+
+
+</p></div>
+
+<div class="pics"><a href="/pokemongo/reallifeevents/safarizonetaipeicity.shtml"><img src="/pokemongo/safarizonetaipei.jpg" alt="Pokémon GO" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO Safari Zone</p>
+<p>A new Pokémon GO Safari Zone event has been announced. This event will run from October 21st through October 23rd in Taipei, in conjunction with the Pokémon Air Adventures project which recently announced a new jet<br /><br>
+This Safari Zone will feature increased spawns of Pachirisu and Pikachu in a shirt, as well as the introduction of Shiny Finneon</p></div>
+
+
+<div class="pics"><a href="/pokemongo/fieldresearch.shtml"><img src="/pokemongo/may2020breakthrough.jpg" width="300" alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p> The Research Breakthrough Pokémon have shifted. From now until September 1st at 20:00 UTC, when you unlock a Research Breakthrough reward, the Pokémon will be Galarian Stunfisk and, with this, Field Research is shifting</p></div>
+
+<div class="pics"><a href="/pokemonmasters/championstadium/hoennchallenge.shtml"><img src="/pokemonmasters/hoenn.jpg" alt="Pokémon Masters - Hoenn Stadium" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>The Champion Stadium has been updated in Pokémon Masters EX. With this update, the Hard Lv. 1 Mode allows for players to battle against the Hoenn Elite Four & Champion. Each battle can be completed once a week with types of Sync Pairs used going towards your medal</p></div>
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/events/teamhoennunite.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>The next Event has been announced for Pokémon Masters EX. This event is the Team Hoenn Assemble event repeat. It runs from August 3rd to August 14th 2022
+</p></div>
+<div class="pics"><a href="/cafemix/monthlygoals.shtml"><img src="/cafemix/monthlygoals/augustgoals.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>Pokémon Café ReMix has added a new <a href="/cafemix/monthlygoals.shtml">Monthly Goal Pass</a> pass which offers the new Dragonite Dragon Heir and Audino Summer Festival outfits as you complete it throughout the month</p></div>
+
+ </div>
+<!-- end_news -->
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/31-July-2022.shtml" id="31-July-2022">Sunday: Pokémon Masters EX - Extreme Battle Event + Pokémon Battle Master + Pokémon GO - Hisuian Braviary Day</a></h2><p class="info"><span class="date">31-07-2022 06:34 BST / 01:34 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 13:15 BST<br />Edit @ 07:00: Pokémon Masters EX | Edit @ 13:15: Pokémon of the Week</p>
+
+ <div class="pics"><a href="/pokemongo/raidday/hisuianbraviaryday.shtml"><img src="/pokemongo/hisuianbraviaryday.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+ <div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO - Raid Day</p>
+<p>Today marks the Pokémon GO Hisuian Braviary Raid Day, which introduces Hisuian Braviary into the game. On this day, for three hours in each region, Hisuian Braviary will appear in raids at all Gyms in the region, with a higher chance of it being available as Shiny when defeated. This runs at these times:<br />
+It runs from 11am to 2pm in your local time.<br />
+We have full details in our <a href="/pokemongo/raidday/hisuianbraviaryday.shtml">Hisuian Braviary Raid Day</a> event page</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events/battlehoenn'sbest.shtml"><img src="/pokemonmasters/brendanlatios.jpg" alt="Pokémon Masters - Rocket Execs Assemble " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX - Villain  Event</p>
+<p>The Battle Hoenn's Best Extreme Battle has begun in Pokémon Masters EX. This event is the Extreme Battle tying in with the Villain Event focused around Hoenn Pokémon. It runs until August 28th.<br />
+Alongside this, the <a href="/pokemonmasters/syncpairs/brendan.shtml">Brendan & Latios</a> Poké Fair Scout is now available <br />
+We're currently compiling all details in our <a href="/pokemonmasters/events/battlehoenn'sbest.shtml">Ethan's Epic Effort </a> event section</p></div>
+
+<div class="pics"><a href="/playpokemon/battlemaster/"><img src="/playpokemon/battlemaster.jpg" alt="Pokémon Championships" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Championship Series Department</h3>
+<p class="title">Pokémon Battle Master</p>
+<p>Today is the Pokémon Battle Master competition in Japan. This competition had players need to qualify in both Video Game and TCG circuits in order to enter the finals. In the finals, players must win in both Video Game and TCG in order to win<br />
+We have the streams in our <a href="/playpokemon/battlemaster/">Pokémon Battle Master </a> section</p></div>
+
+
+ <div class="pics"><a href="/potw-swsh/898.shtml"><img src="/potw-swsh/898-i.jpg" alt="Pokémon of the Week - Calyrex" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Pokémon of the Week Department</h3>
+<p class="title">Who's That Pokémon</p>
+<p>Today marks the one-hundred & fourty-first entry into the Generation VIII competitive field with a Galar Pokémon. These entries are created by the visitors for the visitors and then compiled by our writers Psynergy, Jellal, Mestorn, Aminith & Mcdanger. To get involved, <a href="https://forums.serebii.net/forums/potw-collaboration.210/" target="blank"><u><b>Click here for the discussion forum</b></u></a> <br />Today, we are covering a Pokémon introduced in the eighth generation. Calyrex is a merciful Pokémon, capable of providing healing and blessings. It reigned over the Galar region in times of yore. Calyrex is known in legend as a king that ruled over Galar in ancient times. It has the power to cause hearts to mend and plants to spring forth. So, here it is, the one-hundred & fourty-first  entry, Calyrex</p></div>
+
+ </div>
+<!-- end_news -->
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/30-July-2022.shtml" id="30-July-2022">Saturday: Pokémon GO - Drone Display & Hisuian Braviary Raid Day</a></h2><p class="info"><span class="date">30-07-2022 10:10 BST / 05:10 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 22:00 BST<br />Edit @ 22:00: Hisuian Braviary</p>
+
+<div class="pics"><a href="/pokemongo/"><img src="/pokemongo.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Following a technical issue with the stream last week, The Pokémon Company have uploaded the  special drone display to celebrate Pokémon GO's 6th Anniversary. This display is taking place in Hokkaido and features over 700 drones making displays of Pikachu, Charizard and more. 
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/Kl1PJJ05PEU" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+</p></div>
+
+ <div class="pics"><a href="/pokemongo/raidday/hisuianbraviaryday.shtml"><img src="/pokemongo/hisuianbraviaryday.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+ <div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO - Raid Day</p>
+<p>The Pokémon GO Hisuian Braviary Raid Day event is starting to roll out in Asia Pacific regions. On this day, for three hours in each region, Hisuian Braviary will appear in raids at all Gyms in the region, with a higher chance of it being available as Shiny when defeated. This runs at these times:<br />
+It runs from 11am to 2pm in your local time.<br />
+We have full details in our <a href="/pokemongo/raidday/hisuianbraviaryday.shtml">Hisuian Braviary Raid Day</a> event page</p></div>
+
+
+ </div>
+<!-- end_news -->
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2022/29-July-2022.shtml" id="29-July-2022">Friday: Pokémon TCG - Incandescent  Arcana + Pokémon Masters EX - Hoenn Villain Event + Pokémon (2019) - Episode details</a></h2><p class="info"><span class="date">29-07-2022 06:02 BST / 01:02 EDT</span> by <span class="user"><a  href=mailto:webmaster@serebii.net>Serebii</a></span>.</p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in.<br />
+<b>Last Update:</b> 16:06 BST<br />Edit @ 07:00: Pokémon Masters EX | Edit @ 07:58: Pokémon Café ReMix | Edit @ 11:34: Episode Details | Edit @ 16:06: PokéToon</p>
+
+
+<div class="pics"><a href="/card/incandescentarcana/"><img src="/card/incandescantarcana.jpg" alt="Pokémon TCG - Incandescent Arcana" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The TCG Department</h3>
+<p class="title">Pokémon Sword & Shield - Incandescent Arcana</p>
+<p>The next Japanese TCG set, <a href="/card/incandescentarcana/">Incandescent Arcana</a>, has been officially revealed. This set is due for release on September 2nd  2022 and features the return of the Lost Zone as a mechanic as well as Alolan Vulpix VSTAR cards. We've begun adding the cards to our <a href="/card/dex">Card Database</a>, with thanks to ToineLay for help with translation<br />
+</p></div>
+
+<div class="pics"><a href="/pokemonmasters/events/teammagma'sred-hotrage.shtml"><img src="/pokemonmasters/events/teammagma'sred-hotrage.jpg" alt="Pokémon Masters - Team Rocket Attacks" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX - Villain  Event</p>
+<p>The Team Magma's Red-Hot Rage Villain  Event has begun in Pokémon Masters EX. This event is the third Villain event and ties in with the new story arc. It runs until August 28th.<br />A new Poké Fair Scout is now available to get the Sync Pair of <a href="/pokemonmasters/syncpairs/may.shtml">May & Blaziken</a>. The scout runs until August 28th<br />We're currently compiling all details in our <a href="/pokemonmasters/events/teammagma'sred-hotrage.shtml">Team Magma's Red-Hot Rage</a> event section</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/villainarc.shtml"><img src="/pokemonmasters/hoennstory.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>A new Chapter <a href="/pokemonmasters/mainstory.shtml">Main Story</a> has begun. This is the start of the fifth chapter second arc, known as the Villain Arc, and this chapter focuses upon Team Magma and Team Aqua</p></div>
+
+<div class="pics"><a href="/anime/epiguide/pokemon/1208.shtml"><img src="/1208.jpg" alt="Chloe and Eevee and the EV-io-lite Primer!" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon 2019 .</p>
+<p>The latest episode has aired in Japan today. This episode features a special showing of Mr. Mime's new show and Team Rocket's radio show focused around the history of Chloe & Eevee. The <a href="/anime/dex"><u>AniméDex</u></a> has been updated with the contents of this <a href="/anime/epiguide/pokemon/1208.shtml"><u>episode</u></a>. Click the picture to go to the section but be warned however as it contains spoilers.</p></div>
+
+
+<div class="pics"><a href="/anime/poketoon/"><img src="/anime/poketoon/snorunt'ssummervacation.jpg" alt="Snorunt's Summer Vacation " width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >PokéToon.</p>
+<p>The seventh episode of PokéToon is now available on the Pokémon TV app. This episode, Snorunt's Summer Vacation follows the story of a group of kids whose summer day was interrupted by a snowfull. New episodes will continue to air weekly.</p></div>
+
+
+
+<div class="pics"><a href="/cafemix/shinyevents.shtml"><img src="/cafemix/shinyaudinoevent.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>The Pokémon Café ReMix Shiny Audino boosted event is now live in the game. From now until August 3rd, you will have a slightly higher chance of finding Audino as its Shiny variant in the game<br />Alongside this, a Taining Rally and Appreciation Event are now live alongisde some log in bonuses that give delivery tickets</div>
+
+
+ </div>
+<!-- end_news -->
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+
+
+		<div style="text-align:right;margin:1em;"><a href="/archive.shtml">Archived News</a></div>
+
+</main></div><!-- END #content -->
+
+
+<aside id="rbar">
+
+	<a href="/potw-swsh/" class="navheader">Pokémon of the Week</a>
+	<div align="center">
+		<a href="/potw-swsh/869.shtml"><img src="/potw-swsh/869.jpg" alt="Pokémon of the Week"  class="tbarpic"></a>
+	</div>
+
+	<div class="navheader">Next In Japan</div>
+	<div>
+		<div align="center"><img src="/anime/NextOn/1211.jpg"  class="tbarpic"></div>
+		Episode 1211<br/>
+		<b>The Semifinals I: Sweep</b><br/>
+		<div align="center"><img src="/anime/NextOn/1211-i.jpg"  class="tbarpic"></div>
+			Airdate: 26/08/2022
+	</div>
+
+	<div class="navheader">Recently In USA</div>
+	<div>
+		<div align="center"><a href="/anime/epiguide/pokemon/1179.shtml"><img src="/1179.jpg"  class="tbarpic"></div>
+		Episode 1179<br/>
+		<b>Showdown at the Gates of Warp!</b><br />
+		<img src="/anime/synopsis.gif">Synopsis</a><br/>
+		<a href="/anime/pictures/pokemon/1179.shtml"><img src="/anime/pictures.gif">Pictures</a><br/>
+	</div>
+
+	<div class="navheader">Next In USA</div>
+	<div>
+		<div align="center"><a href="/anime/epiguide/pokemon/1180.shtml"><img src="/1180.jpg"  class="tbarpic"></div>
+		Episode 1180<br/>
+		<b>The Spectral Express!</b><br />
+		Airdate: 2022</a><br />
+		<a href="/anime/epiguide/pokemon/1180.shtml"><img src="/anime/synopsis.gif">Synopsis</a><br/>
+		<a href="/anime/pictures/pokemon/1180.shtml"><img src="/anime/pictures.gif">Pictures</a><br/>
+	</div>
+
+	<div class="navheader">Social Media</div>
+	<div class="center">
+		<a href="http://www.facebook.com/SerebiiNetPage" target="blank"><img src="/Toolbar/headers/Facebook.png" width="30" alt="Facebook"/></a>
+		<a href="http://www.twitter.com/SerebiiNet" target="blank"><img src="/Toolbar/headers/Twitter.png" width="30" alt="Twitter"/></a>
+		<a href="http://www.youtube.com/serebiispp" target="blank"><img src="/Toolbar/headers/youtube.png" width="30" alt="YouTube"/></a>
+		<a href="http://www.instagram.com/serebii" target="blank" rel="nofollow"><img src="/Toolbar/headers/instagram.png" width="30" alt="Instagram"/></a>
+	</div>
+
+	<div class="navheader">In Association With</div>
+	<div class="center">
+		<a href="http://www.pocketmonsters.net/" target="blank" rel="nofollow"><img src="/Toolbar/pm.png" alt="#PM"></a><br/>
+		<a href="http://www.legendarypokemon.net/" target="blank" rel="nofollow"><img src="/Toolbar/lpoke.png" alt="Legendary Pokémon"></a>
+	</div>
+
+</aside>
+
+</div><!-- END #wrapper -->
+<footer id="footer">
+	<div class="copyright">
+		<a href="#top" alt="Top of Page" title="Top of Page" class="totop"></a>
+
+		All Content is &copy; Copyright of Serebii.net 1999-2022. |
+		<a href="/privacy.shtml">Privacy Policy</a> |
+		<a class="nn-cmp-show" href="#">Manage Cookie Settings</a><br/>
+		Pokémon and All Respective Names are Trademark &amp; &copy; of Nintendo 1996-2022
+	</div>
+
+	<div style="height:102px">
+		<div id="nn_lb2"></div><div id="nn_mobile_lb2"></div>
+<div id="celtra-reveal-wrapper" style="position:fixed; height: auto; width: 100%">
+<div id="nn_1by1"></div>
+</div>
+	</div>
+</footer>
+
+
+
+</body></html>

@@ -1,4 +1,4 @@
-doctype html
+doctype html <!-- This is for verifying the stl stuff -->
 html
     head
         title 3D Print Queue
@@ -10,67 +10,26 @@ html
         script(src = '/js/stlviewer.js')
         script(src = '/js/downloadFile.js')
         script(src = '/js/WebGL.js')
-        script(src = '/js/downloadSTL.js')
         meta(name='viewport' content='width=device-width, initial-scale=1')
     body
         h2 3D Print Queue
-        div(class = "flex-container")
-            div(class = "flex-spreadsheet")
-                iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
-            div(class = "flex-stl1")
-                div(class = "stlviewer" data-src = "test2.stl")
-                div(class = "stlviewer" data-src = "test2.stl")
-            div(class = "flex-stl2")
-                div(class = "stlviewer" data-src = "test2.stl")
-                div(class = "stlviewer" data-src = "test2.stl")
-        h2 Pro Print Queue
-        iframe(class = "proPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false")
-        h3 Current Files Printing
-        img(src = "ninja2.jpg")
-        script.
-            const sheetId = '1MYRyMDRn3eRuRXmRlIxOsCuIFTb08BgBUngr9Mfpqt0';
-            const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-            const sheetName = 'Test';
-            const query = encodeURIComponent('Select *')
-            const url = `${base}&sheet=${sheetName}&tq=${query}`
-            
-            const data = []
-            document.addEventListener('DOMContentLoaded', init)
-            function init() {
-                fetch(url)
-                    .then(res => res.text())
-                    .then(rep => {
-                        //Remove additional text and extract only JSON:
-                        const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-                        export2txt(jsonData)
-                        testData = jsonData.table.rows[0].c[3].v;
-                        testData2 = jsonData.table.rows[1].c[3].v;
-                        testData3 = [testData, testData2];
-                        //testData.appendChild(jsonData.table.rows[1].c[3].v);
-                        export2txt(testData3)
-                        var testID = "1wmh9v7eUp3-7EzqJTkSmEm0twshvMVfH";
-
-                        //using download link
-                        var url = "https://drive.google.com/uc?export=download&id=1qilo1so6jZ93efNNt7yE8tAxAQqBkegZ";
-                        openInNewTab(url)
-                        STLViewerEnable("stlviewer");
-                    })
+        iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
+        img(src = "ninja.png")
+        script. 
+            window.onload = function() {
+                STLViewerEnable("stlviewer");
+                var url = "https://drive.google.com/uc?export=download&id=1qilo1so6jZ93efNNt7yE8tAxAQqBkegZ";
+                openInNewTab(url)
             }
-            //working code:
             function openInNewTab(url) {
-            window.open(url, '_blank').focus();
+                alert("hello")
+                await page._client.send("Page.setDownloadBehavior", {
+                    behavior: "allow"
+                    downloadPath: "./public"
+                })
+                window.open(url, '_blank').focus();
             }
+        div(class = "stlviewer" data-src = "test2.stl")
 
-            function export2txt(originalData) {
-                const a = document.createElement("a");
-                a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
-                    type: "text/plain"
-                }));
-                a.setAttribute("download", "data.txt");
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-            }          
-            function output(inp) {
-                document.body.appendChild(document.createElement('pre')).innerHTML = inp;
-            }
+
+
