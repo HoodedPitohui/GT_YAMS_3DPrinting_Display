@@ -1,4 +1,4 @@
-# GT_YAMS_3DPrinting_Display
+# Georgia Tech Yang Aero Makerspace 3D Printing Queue Display
 <h1>How to Run</h1>
 <ol>
   <li>Make sure you have a valid node.js installation</li>
