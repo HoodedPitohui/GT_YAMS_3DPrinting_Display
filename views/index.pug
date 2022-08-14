@@ -1,4 +1,4 @@
-doctype html <!-- This is for verifying the stl stuff -->
+doctype html
 html
     head
         title 3D Print Queue
@@ -13,23 +13,81 @@ html
         meta(name='viewport' content='width=device-width, initial-scale=1')
     body
         h2 3D Print Queue
-        iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
-        img(src = "ninja.png")
-        script. 
-            window.onload = function() {
-                STLViewerEnable("stlviewer");
-                var url = "https://drive.google.com/uc?export=download&id=1qilo1so6jZ93efNNt7yE8tAxAQqBkegZ";
-                openInNewTab(url)
+        div(class = "flex-container")
+            div(class = "flex-spreadsheet")
+                iframe(class = "regPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=866237229&amp;single=true&amp;widget=true&amp;headers=false")
+            div(class = "flex-stl1")
+                div(class = "stlviewer" data-src = "test2.stl")
+                div(class = "stlviewer" data-src = "test2.stl")
+            div(class = "flex-stl2")
+                div(class = "stlviewer" data-src = "test2.stl")
+                div(class = "stlviewer" data-src = "test2.stl")
+        h2 Pro Print Queue
+        iframe(class = "proPrints", src = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSikvft3kwodpPefYj-h3Nw1t685NOGFyXSYVmmLdvyrBBf7DNctnC2HZ8s3kdxrppMOc8mM5_tT6Da/pubhtml?gid=1170070048&amp;single=true&amp;widget=true&amp;headers=false")
+        h3 Current Files Printing
+        img(src = "ninja2.jpg")
+        script.
+            const sheetId = '1MYRyMDRn3eRuRXmRlIxOsCuIFTb08BgBUngr9Mfpqt0';
+            const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
+            const sheetName = 'Test';
+            const query = encodeURIComponent('Select *')
+            const url = `${base}&sheet=${sheetName}&tq=${query}`
+            
+            const data = []
+            document.addEventListener('DOMContentLoaded', init)
+            function init() {
+                fetch(url)
+                    .then(res => res.text())
+                    .then(rep => {
+                        //Remove additional text and extract only JSON:
+                        const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
+                        export2txt(jsonData)
+                        stlFile1 = jsonData.table.rows[0].c[2].v;
+                        stlFile2 = jsonData.table.rows[1].c[2].v;
+                        stlFile3 = jsonData.table.rows[2].c[2].v;
+                        stlFile4 = jsonData.table.rows[3].c[2].v;
+                        stlData = [stlFile1, stlFile2, stlFile3, stlFile4];
+                        //testData.appendChild(jsonData.table.rows[1].c[3].v);
+                        //export2txt(stlData);
+                        stlDataConv = getDownloadUrl(stlData);
+                        export2txt(stlDataConv)
+                        openInNewTab(stlDataConv[0])
+                        var testID = "1wmh9v7eUp3-7EzqJTkSmEm0twshvMVfH";
+
+                        //using download link
+                        var url = "https://drive.google.com/uc?export=download&id=1qilo1so6jZ93efNNt7yE8tAxAQqBkegZ";
+                        openInNewTab(url)
+                        STLViewerEnable("stlviewer");
+                    })
             }
+            //working code:
             function openInNewTab(url) {
-                alert("hello")
-                await page._client.send("Page.setDownloadBehavior", {
-                    behavior: "allow"
-                    downloadPath: "./public"
-                })
-                window.open(url, '_blank').focus();
+            window.open(url, '_blank').focus();
             }
-        div(class = "stlviewer" data-src = "test2.stl")
 
-
-
+            function export2txt(originalData) {
+                const a = document.createElement("a");
+                a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
+                    type: "text/plain"
+                }));
+                a.setAttribute("download", "data.txt");
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }          
+            function output(inp) {
+                document.body.appendChild(document.createElement('pre')).innerHTML = inp;
+            }
+            function getDownloadUrl(linkArray) {
+                const urlPrefix = "https://drive.google.com/uc?export=download&id=";
+                var newLinkArray = [];
+                var x = [];
+                newLinkArray.length = linkArray.length;
+                for (let i = 0; i < linkArray.length; i++) {
+                    gDriveLinkArray = linkArray[i].split("https://drive.google.com/open?id=");
+                    var id = gDriveLinkArray[1];
+                    newLinkArray[i] = urlPrefix + id;
+                    newLinkArray[i] = newLinkArray[i].replace(/, /g, '');
+                }
+                return newLinkArray;
+            }
