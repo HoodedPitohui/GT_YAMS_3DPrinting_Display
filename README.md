@@ -1,4 +1,11 @@
 # GT_AMS_3DPrinting_Display
+<h1>How to Run</h1>
+<ol>
+  <li>Make sure you have a valid node.js installation</li>
+  <li>Run npm install</li>
+  <li>Make sure you have the valid packages necessary (listed below)</li>
+  <li>Run <i>node server.js</i></li>
+</ol>
 <h1>Objectives</h1>
 <ul>
   <li>Display the 3D print and pro print queue</li>
