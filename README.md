@@ -1,4 +1,4 @@
-# GT_AMS_3DPrinting_Display
+# GT_YAMS_3DPrinting_Display
 <h1>How to Run</h1>
 <ol>
   <li>Make sure you have a valid node.js installation</li>
